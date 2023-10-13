@@ -17,14 +17,15 @@ const about = () => {
           <AboutItem
             image={Tiago}
             title="Tiago Pereira"
-            text="Nostrud laboris id consectetur cillum culpa excepteur tempor laboris adipisicing consectetur pariatur fugiat sit cillum. Proident culpa sint aliquip eiusmod magna nisi et ut ad irure fugiat. Anim esse ad cillum id magna enim ullamco velit nulla enim tempor tempor excepteur. Ut et anim incididunt minim dolor eu eiusmod occaecat qui excepteur proident minim. Pariatur aute voluptate labore sit excepteur officia cillum."
+            text="Nostrud laboris id consectetur cillum culpa excepteur tempor laboris adipisicing consectetur pariatur fugiat sit cillum. Proident culpa sint aliquip eiusmod magna nisi et ut ad irure fugiat. Anim esse ad cillum id magna enim ullamco velit nulla enim tempor tempor excepteur."
             link="/"
           />
           <AboutItem
             image={Ricardo}
             title="Ricardo Rocha"
-            text="Nostrud laboris id consectetur cillum culpa excepteur tempor laboris adipisicing consectetur pariatur fugiat sit cillum. Proident culpa sint aliquip eiusmod magna nisi et ut ad irure fugiat. Anim esse ad cillum id magna enim ullamco velit nulla enim tempor tempor excepteur. Ut et anim incididunt minim dolor eu eiusmod occaecat qui excepteur proident minim. Pariatur aute voluptate labore sit excepteur officia cillum."
+            text="Nostrud laboris id consectetur cillum culpa excepteur tempor laboris adipisicing consectetur pariatur fugiat sit cillum. Proident culpa sint aliquip eiusmod magna nisi et ut ad irure fugiat. Anim esse ad cillum id magna enim ullamco velit nulla enim tempor tempor excepteur."
             link="/"
+            reversed
           />
         </div>
       </Container>
