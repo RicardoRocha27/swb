@@ -4,7 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 export type TAboutItem = {
-  image: StaticImageData;
+  image: string;
   title: string;
   text: string;
   link: string;
