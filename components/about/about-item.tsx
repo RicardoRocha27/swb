@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export type TAboutItem = {
   image: StaticImageData;
@@ -13,27 +14,25 @@ export type TAboutItem = {
 const AboutItem = ({ image, title, text, link, reversed }: TAboutItem) => {
   return (
     <div
-      className={
-        reversed
-          ? "grid grid-cols-1 sm:grid-cols-2 items-center gap-4"
-          : "grid grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-24"
-      }
+      className={cn(
+        "grid grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-24",
+        reversed && "mb-0"
+      )}
     >
-      <div
-        className={
-          reversed
-            ? "mx-auto sm:mr-0 order-1 sm:order-2 "
-            : "mx-auto sm:mx-0 order-1 "
-        }
-      >
-        <Image src={image} alt={title} width={300} height={300} />
+      <div className={cn("mx-auto sm:mx-0 order-1 ", reversed && "sm:order-2")}>
+        <Image
+          className={cn(reversed && "sm:ml-auto ")}
+          src={image}
+          alt={title}
+          width={300}
+          height={300}
+        />
       </div>
       <div
-        className={
-          reversed
-            ? "flex flex-col text-center sm:text-left space-y-6 order-2 sm:order-1"
-            : "flex flex-col text-center sm:text-left space-y-6 order-2"
-        }
+        className={cn(
+          "flex flex-col text-center sm:text-left space-y-6 order-2",
+          reversed && "sm:order-1"
+        )}
       >
         <p className="text-lg font-bold text-background">{title}</p>
         <p className="text-background/80">{text}</p>
