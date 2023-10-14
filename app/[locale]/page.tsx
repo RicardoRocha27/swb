@@ -1,4 +1,5 @@
 import Contacts from "@/components/contacts/contacts";
+import Faqs from "@/components/faqs/faqs";
 import Hero from "@/components/hero/hero";
 import Projects from "@/components/projects/projects";
 import Services from "@/components/services/services";
@@ -15,6 +16,7 @@ export default function Home({
       <Services locale={locale} />
       <Projects locale={locale} />
       <Contacts />
+      <Faqs />
     </div>
   );
 }

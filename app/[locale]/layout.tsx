@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 import { CustomLocale } from "@/types";
 import { ToastProvider } from "@/providers/toast-provider";
+import Footer from "@/components/footer/footer";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={urbanist.className}>
         <Navbar locale={locale} />
         {children}
+        <Footer />
 
         <ToastProvider />
       </body>
