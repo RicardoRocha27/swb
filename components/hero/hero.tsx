@@ -1,22 +1,24 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Container from "../container";
+import { getDictionary } from "@/lib/get-dictionary";
+import { CustomLocale } from "@/types";
 
-const Hero = () => {
+const Hero = async ({ locale }: { locale: CustomLocale }) => {
+  const dictionary = await getDictionary(locale);
+  const hero = dictionary.hero;
+
   return (
     <Container>
       <div className="flex flex-col justify-between items-center lg:flex-row py-32 space-y-8 lg:space-y-0">
         <div className="space-y-8 text-center lg:text-start">
           <div className="space-y-2 max-w-[500px] mx-auto">
-            <h1 className="text-6xl font-bold">We Build Your Future Online</h1>
-            <p className="text-foreground/80">
-              Crafting dynamic, user-centric online experiences that go beyond
-              the ordinary. We shape destinies, not just websites.
-            </p>
+            <h1 className="text-6xl font-bold">{hero.title}</h1>
+            <p className="text-foreground/80">{hero.subtitle}</p>
           </div>
           {/* TODO: add on click to button. */}
           <Button variant={"accent"} className="space-x-2">
-            <p>Get in touch</p>
+            <p>{hero.button}</p>
             <Image
               src={"/assets/icons/touch-icon.svg"}
               alt="touch"

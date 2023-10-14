@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 export type TNavbarRoute = {
   label: string;
   path: string;
@@ -12,13 +10,21 @@ type TMenuItem = {
 };
 
 const MenuItem = ({ item }: TMenuItem) => {
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView();
+    }
+  };
+
   return (
-    <Link
-      href={item.path}
-      className="rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+    <div
+      onClick={() => handleScroll(item.path)}
+      className="cursor-pointer rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
     >
       {item.label}
-    </Link>
+    </div>
   );
 };
 

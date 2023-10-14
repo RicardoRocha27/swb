@@ -1,0 +1,115 @@
+{
+  "routes": {
+    "services": {
+      "label": "Services",
+      "path": "services"
+    },
+    "about": {
+      "label": "About",
+      "path": "testimonials"
+    },
+    "portfolio": {
+      "label": "Portfolio",
+      "path": "portfolio"
+    },
+    "testimonials": {
+      "label": "Testimonials",
+      "path": "testimonials"
+    }
+  },
+  "hero": {
+    "title": "We Build Your Future Online",
+    "subtitle": "Crafting dynamic, user-centric online experiences that go beyond the ordinary. We shape destinies, not just websites.",
+    "button": "Get in touch"
+  },
+  "services": {
+    "heading": {
+      "title": "Tailored Solutions",
+      "subtitle": "Crafting highly personalized strategies for unparalleled, far-reaching impact"
+    },
+    "info": {
+      "design": {
+        "image": "/assets/icons/design-icon.svg",
+        "title": "Web Design",
+        "text": "We will collaborate with you to create a website that embodies your brand's essence. Whether you envision a sleek, modern interface or a timeless, elegant design, we'll bring your vision to life."
+      },
+      "development": {
+        "image": "/assets/icons/development-icon.svg",
+        "title": "Web Development",
+        "text": "We will collaborate with you to create a website that embodies your brand's essence. Whether you envision a sleek, modern interface or a timeless, elegant design, we'll bring your vision to life."
+      },
+      "copywrite": {
+        "image": "/assets/icons/copywrite-icon.svg",
+        "title": "Copywriting",
+        "text": "We will collaborate with you to create a website that embodies your brand's essence. Whether you envision a sleek, modern interface or a timeless, elegant design, we'll bring your vision to life."
+      }
+    }
+  },
+  "about": {
+    "heading": {
+      "title": "Who Are We?",
+      "subtitle": "Delve into the core of our organization and uncover the driving forces behind our shared mission."
+    },
+    "info": {
+      "tiago": {
+        "name": "Tiago Pereira",
+        "description": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet. Curabitur quis odio tincidunt lacus felis lectus dapibus nibh consectetur. Duis auctor adipiscing velit aliquam mauris interdum tincidunt blandit in. Aliquam pharetra gravida rutrum praesent. Vulputate ullamcorper in pretium eget ut praesent. Eros condimentum porta amet ornare hendrerit egestas in proin sit.",
+        "href": "https://tiagopereira-portfolio.vercel.app/",
+        "button": "Visit Website"
+      },
+      "ricardo": {
+        "name": "Ricardo Rocha",
+        "description": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet. Curabitur quis odio tincidunt lacus felis lectus dapibus nibh consectetur. Duis auctor adipiscing velit aliquam mauris interdum tincidunt blandit in. Aliquam pharetra gravida rutrum praesent. Vulputate ullamcorper in pretium eget ut praesent. Eros condimentum porta amet ornare hendrerit egestas in proin sit.",
+        "href": "https://ricardo-rocha.vercel.app/",
+        "button": "Visit Website"
+      }
+    }
+  },
+  "projects": {
+    "heading": {
+      "title": "Our Projects",
+      "subtitle": "Explore the culmination of our relentless pursuit of excellence"
+    },
+    "info": {
+      "asdesaber": {
+        "href": "https://asdesaber.pt/",
+        "image": "/assets/photos/asdesaber-photo.png",
+        "color": "#1893c6",
+        "title": "Ás de saber",
+        "subtitle": "Portuguese Tutoring Center",
+        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "services": {
+          "web_design": true,
+          "web_development": true,
+          "copywriting": false
+        }
+      },
+      "meme": {
+        "href": "https://casinhasdomeme.pt/pt/",
+        "image": "/assets/photos/meme-photo.png",
+        "color": "#c1a661",
+        "title": "Casinhas do mémé",
+        "subtitle": "Serra da Estrela House Rental Company",
+        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "services": {
+          "web_design": true,
+          "web_development": true,
+          "copywriting": true
+        }
+      },
+      "jokes": {
+        "href": "https://jokesaside.vercel.app/home",
+        "image": "/assets/photos/jokes-photo.png",
+        "color": "#0f172a",
+        "title": "Jokes Aside",
+        "subtitle": "Social Platform for Humour Enthusiasts",
+        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "services": {
+          "web_design": true,
+          "web_development": true,
+          "copywriting": true
+        }
+      }
+    }
+  }
+}

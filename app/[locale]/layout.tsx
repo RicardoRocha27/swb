@@ -3,6 +3,7 @@ import { Urbanist } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
+import { CustomLocale } from "@/types";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -16,12 +17,12 @@ export default function RootLayout({
   params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: CustomLocale };
 }) {
   return (
     <html lang={locale}>
       <body className={urbanist.className}>
-        <Navbar />
+        <Navbar locale={locale} />
         {children}
       </body>
     </html>

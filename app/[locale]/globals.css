@@ -10,6 +10,13 @@
  accent: 3 65% 71%
 */
 
+html,
+body,
+:root {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     --background: 0 0% 96%;
