@@ -15,7 +15,7 @@ const AboutItem = ({ image, title, text, link, reversed }: TAboutItem) => {
   return (
     <div
       className={cn(
-        "grid grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-24",
+        "grid grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-20",
         reversed && "mb-0"
       )}
     >
