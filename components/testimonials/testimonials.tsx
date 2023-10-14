@@ -44,7 +44,7 @@ const Testimonials = () => {
     {
       image: "/assets/icons/paula.png",
       name: "Paula",
-      type: "Coursemate",
+      type: "Client",
       comment:
         "Lorem ipsum dolor sit amet consectetur. Neque parturient orci sit condimentum turpis venenatis venenatis sit quisque. Erat egestas sem ultricies amet mi. Magna feugiat interdum at varius duis augue. Cursus porttitor ullamcorper dolor imperdiet non purus quis.",
     },
