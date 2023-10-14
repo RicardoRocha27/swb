@@ -9,7 +9,7 @@ const Projects = async ({ locale }: { locale: CustomLocale }) => {
   const projects = dictionary.projects;
 
   return (
-    <div className="pb-32" id="portfolio">
+    <div id="portfolio">
       <Container>
         <Heading
           title={projects.heading.title}

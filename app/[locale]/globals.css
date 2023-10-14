@@ -17,6 +17,21 @@ body,
   scroll-behavior: smooth;
 }
 
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0 !important;
+  background-color: transparent;
+  color: hsl(266, 12%, 23%);
+  font-size: 24px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+
 @layer base {
   :root {
     --background: 0 0% 96%;

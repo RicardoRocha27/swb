@@ -17,6 +17,7 @@ const Heading = ({ title, subtitle, isBackgroundLight }: THeading) => {
       </h1>
       <p
         className={cn(
+          "max-w-[400px]",
           isBackgroundLight ? "text-foreground/80" : "text-background/80"
         )}
       >

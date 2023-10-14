@@ -4,6 +4,7 @@ import Faqs from "@/components/faqs/faqs";
 import Hero from "@/components/hero/hero";
 import Projects from "@/components/projects/projects";
 import Services from "@/components/services/services";
+import Testimonials from "@/components/testimonials/testimonials";
 import { CustomLocale } from "@/types";
 
 export default function Home({
@@ -17,6 +18,7 @@ export default function Home({
       <Services locale={locale} />
       <About locale={locale} />
       <Projects locale={locale} />
+      <Testimonials />
       <Contacts locale={locale} />
       <Faqs locale={locale} />
     </div>
