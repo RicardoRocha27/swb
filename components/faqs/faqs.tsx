@@ -1,3 +1,4 @@
+import { CustomLocale } from "@/types";
 import Container from "../container";
 import {
   Accordion,
@@ -5,36 +6,38 @@ import {
   AccordionItem,
   AccordionContent,
 } from "../ui/accordion";
+import { getDictionary } from "@/lib/get-dictionary";
 
-const Faqs = () => {
+const Faqs = async ({ locale }: { locale: CustomLocale }) => {
+  const dictionary = await getDictionary(locale);
+  const faqs = dictionary.faqs;
+
   return (
     <div className="py-32">
       <Container>
-        <h1 className="text-xl font-bold pb-24">
-          Frequently Asked Questions (FAQs)
-        </h1>
+        <h1 className="text-xl font-bold pb-24">{faqs.title}</h1>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-start">
               Como é que o Gyokeres é tão máquina?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-start">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-start">
               Porque é que o Paulinho ainda joga no Sporting?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-start">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
-            <AccordionTrigger>
+            <AccordionTrigger className="text-start">
               Porque é que o Esgaio ainda não foi para o City por 110M?
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="text-start">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             </AccordionContent>
           </AccordionItem>

@@ -8,10 +8,18 @@ export type TAboutItem = {
   title: string;
   text: string;
   link: string;
+  buttonLabel: string;
   reversed?: boolean;
 };
 
-const AboutItem = ({ image, title, text, link, reversed }: TAboutItem) => {
+const AboutItem = ({
+  image,
+  title,
+  text,
+  link,
+  buttonLabel,
+  reversed,
+}: TAboutItem) => {
   return (
     <div
       className={cn(
@@ -39,9 +47,10 @@ const AboutItem = ({ image, title, text, link, reversed }: TAboutItem) => {
         <Link
           className="mx-auto sm:mx-0 flex space-x-2 items-center group"
           href={link}
+          target="_blank"
         >
           <p className="text-secondary group-hover:text-secondary/80">
-            Visit website
+            {buttonLabel}
           </p>
           <div className="text-secondary group-hover:text-secondary/80">
             <ArrowRight size={15} />

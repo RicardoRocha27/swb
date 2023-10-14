@@ -9,7 +9,7 @@ const Services = async ({ locale }: { locale: CustomLocale }) => {
   const services = dictionary.services;
 
   return (
-    <div className="bg-foreground pb-32" id="services">
+    <div className="bg-foreground" id="services">
       <Container>
         <Heading
           title={services.heading.title}

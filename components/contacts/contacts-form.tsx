@@ -40,7 +40,21 @@ const formSchema = z.object({
   }),
 });
 
-const ContactsForm = () => {
+type TContactsForm = {
+  inputs: {
+    [key: string]: {
+      label: string;
+      placeholder: string;
+    };
+  };
+  heading: {
+    title: string;
+    subtitle: string;
+  };
+  buttonLabel: string;
+};
+
+const ContactsForm = ({ inputs, heading, buttonLabel }: TContactsForm) => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -85,11 +99,9 @@ const ContactsForm = () => {
     <div className="flex-1 md:pb-32">
       <div className="flex flex-col space-y-4 pt-32 pb-24 items-center text-center md:items-start md:text-start">
         <h1 className={cn("text-4xl text-accent", prozaLibre.className)}>
-          Get in touch
+          {heading.title}
         </h1>
-        <p className={"text-background/80"}>
-          Need assistance? Send us a message
-        </p>
+        <p className={"text-background/80"}>{heading.subtitle}</p>
       </div>
       <div>
         <Form {...form}>
@@ -103,11 +115,11 @@ const ContactsForm = () => {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel>{inputs.name.label}</FormLabel>
                     <FormControl>
                       <Input
                         disabled={isLoading}
-                        placeholder="Name"
+                        placeholder={inputs.name.placeholder}
                         {...field}
                       />
                     </FormControl>
@@ -120,11 +132,11 @@ const ContactsForm = () => {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel>{inputs.email.label}</FormLabel>
                     <FormControl>
                       <Input
                         disabled={isLoading}
-                        placeholder="Email"
+                        placeholder={inputs.email.placeholder}
                         {...field}
                       />
                     </FormControl>
@@ -138,11 +150,11 @@ const ContactsForm = () => {
               name="subject"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Subject</FormLabel>
+                  <FormLabel>{inputs.subject.label}</FormLabel>
                   <FormControl>
                     <Input
                       disabled={isLoading}
-                      placeholder="Subject"
+                      placeholder={inputs.subject.placeholder}
                       {...field}
                     />
                   </FormControl>
@@ -155,12 +167,12 @@ const ContactsForm = () => {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message</FormLabel>
+                  <FormLabel>{inputs.message.label}</FormLabel>
                   <FormControl>
                     <Textarea
                       className=" resize-none"
                       disabled={isLoading}
-                      placeholder="Message"
+                      placeholder={inputs.message.placeholder}
                       {...field}
                     />
                   </FormControl>
@@ -169,7 +181,7 @@ const ContactsForm = () => {
               )}
             />
             <Button variant={"secondary"} className="space-x-2 mt-8">
-              <p>Send Message</p>
+              <p>{buttonLabel}</p>
               <Image
                 src={"/assets/icons/send-icon.svg"}
                 alt="send"

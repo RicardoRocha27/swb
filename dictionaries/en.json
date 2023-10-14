@@ -6,7 +6,7 @@
     },
     "about": {
       "label": "About",
-      "path": "testimonials"
+      "path": "about"
     },
     "portfolio": {
       "label": "Portfolio",
@@ -52,16 +52,20 @@
     },
     "info": {
       "tiago": {
+        "image": "/assets/photos/tiago.png",
         "name": "Tiago Pereira",
         "description": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet. Curabitur quis odio tincidunt lacus felis lectus dapibus nibh consectetur. Duis auctor adipiscing velit aliquam mauris interdum tincidunt blandit in. Aliquam pharetra gravida rutrum praesent. Vulputate ullamcorper in pretium eget ut praesent. Eros condimentum porta amet ornare hendrerit egestas in proin sit.",
         "href": "https://tiagopereira-portfolio.vercel.app/",
-        "button": "Visit Website"
+        "reversed": false,
+        "buttonLabel": "Visit Website"
       },
       "ricardo": {
+        "image": "/assets/photos/ricardo.png",
         "name": "Ricardo Rocha",
         "description": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet. Curabitur quis odio tincidunt lacus felis lectus dapibus nibh consectetur. Duis auctor adipiscing velit aliquam mauris interdum tincidunt blandit in. Aliquam pharetra gravida rutrum praesent. Vulputate ullamcorper in pretium eget ut praesent. Eros condimentum porta amet ornare hendrerit egestas in proin sit.",
         "href": "https://ricardo-rocha.vercel.app/",
-        "button": "Visit Website"
+        "reversed": true,
+        "buttonLabel": "Visit Website"
       }
     }
   },
@@ -109,6 +113,52 @@
           "web_development": true,
           "copywriting": true
         }
+      }
+    }
+  },
+  "testimonials": {},
+  "contacts": {
+    "heading": {
+      "title": "Get in touch",
+      "subtitle": "Need assistance? Send us a message"
+    },
+    "subHeading": "More ways to connect",
+    "form": {
+      "inputs": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Email"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Subject"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Message"
+        }
+      },
+      "buttonLabel": "Send Message"
+    }
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions (FAQs)",
+    "questions": {
+      "1": {
+        "question": "",
+        "answer": ""
+      },
+      "2": {
+        "question": "",
+        "answer": ""
+      },
+      "3": {
+        "question": "",
+        "answer": ""
       }
     }
   }

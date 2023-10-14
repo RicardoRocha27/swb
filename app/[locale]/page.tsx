@@ -15,10 +15,10 @@ export default function Home({
     <div>
       <Hero locale={locale} />
       <Services locale={locale} />
-      <About />
+      <About locale={locale} />
       <Projects locale={locale} />
-      <Contacts />
-      <Faqs />
+      <Contacts locale={locale} />
+      <Faqs locale={locale} />
     </div>
   );
 }
