@@ -1,3 +1,4 @@
+import About from "@/components/about/about";
 import Contacts from "@/components/contacts/contacts";
 import Faqs from "@/components/faqs/faqs";
 import Hero from "@/components/hero/hero";
@@ -14,6 +15,7 @@ export default function Home({
     <div>
       <Hero locale={locale} />
       <Services locale={locale} />
+      <About />
       <Projects locale={locale} />
       <Contacts />
       <Faqs />
