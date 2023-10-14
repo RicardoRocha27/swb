@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 import Container from "../container";
 import { getDictionary } from "@/lib/get-dictionary";
 import { CustomLocale } from "@/types";
+import HeroButton from "./hero-button";
 
 const Hero = async ({ locale }: { locale: CustomLocale }) => {
   const dictionary = await getDictionary(locale);
@@ -16,16 +17,7 @@ const Hero = async ({ locale }: { locale: CustomLocale }) => {
             <h1 className="text-6xl font-bold">{hero.title}</h1>
             <p className="text-foreground/80">{hero.subtitle}</p>
           </div>
-          {/* TODO: add on click to button. */}
-          <Button variant={"accent"} className="space-x-2">
-            <p>{hero.button}</p>
-            <Image
-              src={"/assets/icons/touch-icon.svg"}
-              alt="touch"
-              width={24}
-              height={24}
-            />
-          </Button>
+          <HeroButton buttonLabel={hero.button} />
         </div>
         <div>
           <Image

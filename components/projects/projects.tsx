@@ -10,12 +10,12 @@ const Projects = async ({ locale }: { locale: CustomLocale }) => {
 
   return (
     <div className="pb-32" id="portfolio">
-      <Heading
-        title={projects.heading.title}
-        subtitle={projects.heading.subtitle}
-        isBackgroundLight
-      />
       <Container>
+        <Heading
+          title={projects.heading.title}
+          subtitle={projects.heading.subtitle}
+          isBackgroundLight
+        />
         <div className="flex flex-col space-y-24">
           {Object.values(projects.info).map((project, index) => (
             <ProjectCard

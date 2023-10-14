@@ -28,55 +28,59 @@ const LanguageDropdown = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="space-x-2 px-0">
-          {currentLocale === "en" ? (
+      <div className="min-w-[130px]">
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" className="flex justify-between px-0  w-full">
+            <div className="flex items-center space-x-2">
+              {currentLocale === "en" ? (
+                <Image
+                  src={"/assets/icons/england-icon.png"}
+                  alt="England"
+                  width={24}
+                  height={24}
+                />
+              ) : (
+                <Image
+                  src={"/assets/icons/portugal-icon.png"}
+                  alt="England"
+                  width={24}
+                  height={24}
+                />
+              )}
+              <span className="text-base">
+                {currentLocale === "en" ? englishLanguage : portugueseLanguage}
+              </span>
+            </div>
+            <ChevronDown />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" className="w-full min-w-[130px]">
+          <DropdownMenuItem
+            onClick={() => handleChangeLocale("en")}
+            className="space-x-2 cursor-pointer min-w-[130px]"
+          >
             <Image
               src={"/assets/icons/england-icon.png"}
               alt="England"
               width={24}
               height={24}
             />
-          ) : (
+            <span className="text-base">{englishLanguage}</span>
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            onClick={() => handleChangeLocale("pt")}
+            className="space-x-2 cursor-pointer min-w-[130px]"
+          >
             <Image
               src={"/assets/icons/portugal-icon.png"}
               alt="England"
               width={24}
               height={24}
             />
-          )}
-          <span className="text-base">
-            {currentLocale === "en" ? englishLanguage : portugueseLanguage}
-          </span>
-          <ChevronDown />
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="w-full">
-        <DropdownMenuItem
-          onClick={() => handleChangeLocale("en")}
-          className="space-x-2 cursor-pointer"
-        >
-          <Image
-            src={"/assets/icons/england-icon.png"}
-            alt="England"
-            width={24}
-            height={24}
-          />
-          <span className="text-base">{englishLanguage}</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => handleChangeLocale("pt")}
-          className="space-x-2 cursor-pointer"
-        >
-          <Image
-            src={"/assets/icons/portugal-icon.png"}
-            alt="England"
-            width={24}
-            height={24}
-          />
-          <span className="text-base">{portugueseLanguage}</span>
-        </DropdownMenuItem>
-      </DropdownMenuContent>
+            <span className="text-base">{portugueseLanguage}</span>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </div>
     </DropdownMenu>
   );
 };

@@ -32,7 +32,7 @@ body,
     --primary-foreground: 168 40% 80%;
 
     --secondary: 168 40% 80%;
-    --secondary-foreground: 195 100% 33%;
+    --secondary-foreground: 266 12% 23%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -44,7 +44,7 @@ body,
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --input: 168 40% 80%;
     --ring: 266 12% 23%;
 
     --radius: 0.5rem;

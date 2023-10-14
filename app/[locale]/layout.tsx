@@ -4,6 +4,7 @@ import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 import { CustomLocale } from "@/types";
+import { ToastProvider } from "@/providers/toast-provider";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -24,6 +25,8 @@ export default function RootLayout({
       <body className={urbanist.className}>
         <Navbar locale={locale} />
         {children}
+
+        <ToastProvider />
       </body>
     </html>
   );
