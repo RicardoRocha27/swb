@@ -1,4 +1,1 @@
-export type TNavbarRoute = {
-  label: string;
-  path: string;
-};
+export type CustomLocale = "en" | "pt";

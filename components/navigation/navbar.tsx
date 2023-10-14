@@ -1,5 +1,5 @@
-import { TNavbarRoute } from "@/types";
 import DesktopNavbar from "./desktop-navbar";
+import { TNavbarRoute } from "./menu-item";
 
 const Navbar = () => {
   const routes: { [key: string]: TNavbarRoute } = {

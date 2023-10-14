@@ -1,5 +1,4 @@
-import { TNavbarRoute } from "@/types";
-import MenuItem from "./menu-item";
+import MenuItem, { TNavbarRoute } from "./menu-item";
 import LanguageDropdown from "./language-dropdown";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,7 +1,11 @@
 "use client";
 
-import { TNavbarRoute } from "@/types";
 import Link from "next/link";
+
+export type TNavbarRoute = {
+  label: string;
+  path: string;
+};
 
 type TMenuItem = {
   item: TNavbarRoute;
