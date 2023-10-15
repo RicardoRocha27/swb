@@ -106,9 +106,11 @@ const MobileNavbar = () => {
               <SheetFooter>
                 <div className="flex space-x-4 mt-8 w-full">
                   <Link href={"/"} target="_blank">
-                    <Linkedin
-                      size={20}
-                      className="text-primary text-sm hover:text-primary/70"
+                    <Image
+                      src={"/assets/icons/linkedin-icon.svg"}
+                      alt="linkedin"
+                      height={24}
+                      width={24}
                     />
                   </Link>
                 </div>
