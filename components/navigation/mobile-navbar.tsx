@@ -51,7 +51,7 @@ const MobileNavbar = () => {
               <nav className="flex flex-col space-y-4 mt-8">
                 <Link href={"/"} className="group">
                   <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
-                    <p>Example</p>
+                    <p>Services</p>
                     <span
                       className={cn(
                         "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
@@ -61,7 +61,7 @@ const MobileNavbar = () => {
                 </Link>
                 <Link href={"/"} className="group">
                   <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
-                    <p>Example</p>
+                    <p>About</p>
                     <span
                       className={cn(
                         "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
@@ -71,7 +71,7 @@ const MobileNavbar = () => {
                 </Link>
                 <Link href={"/"} className="group">
                   <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
-                    <p>Example</p>
+                    <p>Projects</p>
                     <span
                       className={cn(
                         "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
@@ -81,7 +81,7 @@ const MobileNavbar = () => {
                 </Link>
                 <Link href={"/"} className="group">
                   <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
-                    <p>Example</p>
+                    <p>Contacts</p>
                     <span
                       className={cn(
                         "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
