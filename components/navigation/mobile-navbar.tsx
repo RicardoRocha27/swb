@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { Linkedin, Menu } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
+import LanguageToggle from "./language-toggle";
 import {
   Sheet,
   SheetContent,
@@ -50,7 +50,7 @@ const MobileNavbar = () => {
               </SheetHeader>
               <nav className="flex flex-col space-y-4 mt-8">
                 <Link href={"/"} className="group">
-                  <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
+                  <p className="text-foreground text-sm transition-all duration-300  relative w-fit">
                     <p>Services</p>
                     <span
                       className={cn(
@@ -60,7 +60,7 @@ const MobileNavbar = () => {
                   </p>
                 </Link>
                 <Link href={"/"} className="group">
-                  <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
+                  <p className="text-foreground text-sm transition-all duration-300  relative w-fit">
                     <p>About</p>
                     <span
                       className={cn(
@@ -70,8 +70,8 @@ const MobileNavbar = () => {
                   </p>
                 </Link>
                 <Link href={"/"} className="group">
-                  <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
-                    <p>Projects</p>
+                  <p className="text-foreground text-sm transition-all duration-300 relative w-fit">
+                    <p>Portfolio</p>
                     <span
                       className={cn(
                         "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
@@ -80,7 +80,7 @@ const MobileNavbar = () => {
                   </p>
                 </Link>
                 <Link href={"/"} className="group">
-                  <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
+                  <p className="text-foreground text-sm transition-all duration-300  relative w-fit">
                     <p>Contacts</p>
                     <span
                       className={cn(
@@ -104,7 +104,7 @@ const MobileNavbar = () => {
                         ))*/}
               </nav>
               <SheetFooter>
-                <div className="flex space-x-4 mt-8 w-full">
+                <div className="flex gap-x-4 items-center mt-8 w-full">
                   <Link href={"/"} target="_blank">
                     <Image
                       src={"/assets/icons/linkedin-icon.svg"}
@@ -113,6 +113,7 @@ const MobileNavbar = () => {
                       width={24}
                     />
                   </Link>
+                  <LanguageToggle />
                 </div>
               </SheetFooter>
             </div>
