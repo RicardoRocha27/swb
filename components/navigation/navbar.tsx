@@ -15,7 +15,7 @@ const Navbar = async ({ locale }: TNavbar) => {
   return (
     <div>
       <DesktopNavbar routes={routes} />
-      <MobileNavbar />
+      <MobileNavbar routes={routes} />
     </div>
   );
 };

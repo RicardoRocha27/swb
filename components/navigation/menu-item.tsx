@@ -21,7 +21,7 @@ const MenuItem = ({ item }: TMenuItem) => {
   return (
     <div
       onClick={() => handleScroll(item.path)}
-      className="cursor-pointer rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+      className=" text-sm md:text-base cursor-pointer rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
     >
       {item.label}
     </div>

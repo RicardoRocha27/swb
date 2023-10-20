@@ -1,5 +1,5 @@
 "use client";
-
+import MenuItem, { TNavbarRoute } from "./menu-item";
 import { usePathname } from "next/navigation";
 import { Linkedin, Menu } from "lucide-react";
 import Link from "next/link";
@@ -19,13 +19,10 @@ import { cn } from "@/lib/utils";
 import Logo from "@/public/assets/brand/logo.png";
 
 type TMobileNavbar = {
-  navigationContent: {
-    label: string;
-    route: string;
-  }[];
+  routes: { [key: string]: TNavbarRoute };
 };
 
-const MobileNavbar = () => {
+const MobileNavbar = ({ routes }: TMobileNavbar) => {
   const pathname = usePathname();
 
   return (
@@ -48,47 +45,10 @@ const MobileNavbar = () => {
                 <Image src={Logo} width={130} alt="logo" />
                 <Separator className="bg-secondary min-w-[100px] h-[1px] rounded-full my-2" />
               </SheetHeader>
-              <nav className="flex flex-col space-y-4 mt-8">
-                <Link href={"/"} className="group">
-                  <p className="text-foreground text-sm transition-all duration-300  relative w-fit">
-                    <p>Services</p>
-                    <span
-                      className={cn(
-                        "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
-                      )}
-                    ></span>
-                  </p>
-                </Link>
-                <Link href={"/"} className="group">
-                  <p className="text-foreground text-sm transition-all duration-300  relative w-fit">
-                    <p>About</p>
-                    <span
-                      className={cn(
-                        "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
-                      )}
-                    ></span>
-                  </p>
-                </Link>
-                <Link href={"/"} className="group">
-                  <p className="text-foreground text-sm transition-all duration-300 relative w-fit">
-                    <p>Portfolio</p>
-                    <span
-                      className={cn(
-                        "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
-                      )}
-                    ></span>
-                  </p>
-                </Link>
-                <Link href={"/"} className="group">
-                  <p className="text-foreground text-sm transition-all duration-300  relative w-fit">
-                    <p>Contacts</p>
-                    <span
-                      className={cn(
-                        "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full"
-                      )}
-                    ></span>
-                  </p>
-                </Link>
+              <nav className="flex flex-col space-y-3 mt-8">
+                {Object.values(routes).map((route, index) => (
+                  <MenuItem key={index} item={route} />
+                ))}
                 {/*  Object.values(navigationContent).map((content, index) => (
                   <Link key={index} href={content.route} className="group">
                     <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
