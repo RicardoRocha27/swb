@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
-
+import ScrollToTop from "@/components/scroll-to-top";
 import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 import { CustomLocale } from "@/types";
@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={urbanist.className}>
+        <ScrollToTop />
         <Navbar locale={locale} />
         {children}
         <Footer />
