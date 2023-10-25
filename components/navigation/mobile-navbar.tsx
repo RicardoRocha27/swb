@@ -1,10 +1,9 @@
 "use client";
-import MenuItem, { TNavbarRoute } from "./menu-item";
-import { usePathname } from "next/navigation";
-import { Linkedin, Menu } from "lucide-react";
+
 import Link from "next/link";
 import Image from "next/image";
-import LanguageToggle from "./language-toggle";
+import { Menu } from "lucide-react";
+
 import {
   Sheet,
   SheetContent,
@@ -13,8 +12,10 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+
+import MenuItem, { TNavbarRoute } from "./menu-item";
+import LanguageToggle from "./language-toggle";
 
 import Logo from "@/public/assets/brand/logo.png";
 
@@ -23,13 +24,9 @@ type TMobileNavbar = {
 };
 
 const MobileNavbar = ({ routes }: TMobileNavbar) => {
-  const pathname = usePathname();
-
   return (
     <div
-      className={cn(
-        "flex md:hidden z-20 items-center justify-between w-full fixed top-0 left-0 bg-background px-4 py-2"
-      )}
+      className={cn("flex md:hidden items-center justify-between px-4 py-2")}
     >
       <Link href={"/"}>
         <Image className="my-2" alt="logo" width={130} height={40} src={Logo} />
@@ -49,19 +46,6 @@ const MobileNavbar = ({ routes }: TMobileNavbar) => {
                 {Object.values(routes).map((route, index) => (
                   <MenuItem key={index} item={route} />
                 ))}
-                {/*  Object.values(navigationContent).map((content, index) => (
-                  <Link key={index} href={content.route} className="group">
-                    <p className="text-foreground text-sm transition-all duration-300 group-hover:text-foreground/70 relative w-fit">
-                      <p>{content.label}</p>
-                      <span
-                        className={cn(
-                          "absolute w-0 h-[1.5px] bg-foreground/70 bottom-0 left-0 transition-all duration-300 group-hover:w-full",
-                          pathname === content.route && "w-full bg-foreground"
-                        )}
-                      ></span>
-                    </p>
-                  </Link>
-                        ))*/}
               </nav>
               <SheetFooter>
                 <div className="flex gap-x-4 items-center mt-8 w-full">

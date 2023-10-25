@@ -1,16 +1,17 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
+import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
-import { Button } from "../ui/button";
-import { ChevronDown } from "lucide-react";
-import Image from "next/image";
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 import { CustomLocale } from "@/types";
-import { usePathname, useRouter } from "next/navigation";
 
 const LanguageDropdown = () => {
   const router = useRouter();

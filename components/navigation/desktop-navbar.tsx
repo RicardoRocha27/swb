@@ -1,8 +1,10 @@
-import MenuItem, { TNavbarRoute } from "./menu-item";
-import LanguageDropdown from "./language-dropdown";
 import Image from "next/image";
 import Link from "next/link";
-import Container from "../container";
+
+import Container from "@/components/container";
+
+import MenuItem, { TNavbarRoute } from "./menu-item";
+import LanguageDropdown from "./language-dropdown";
 
 type TDesktopNavbar = {
   routes: { [key: string]: TNavbarRoute };
@@ -10,7 +12,7 @@ type TDesktopNavbar = {
 
 const DesktopNavbar = ({ routes }: TDesktopNavbar) => {
   return (
-    <div className="hidden md:flex md:items-center md:justify-center">
+    <div className="hidden md:flex md:items-center md:justify-center fixed top-0 left-0 bg-background w-full z-20">
       <Container>
         <div className="flex justify-between py-8">
           <Link
