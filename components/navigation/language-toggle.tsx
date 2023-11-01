@@ -6,10 +6,6 @@ import { usePathname, useRouter } from "next/navigation";
 import { CustomLocale } from "@/types";
 
 const LanguageToggle = () => {
-  const [language, setlanguage] = useState("pt");
-  const changeLanguage = () => {
-    language === "en" ? setlanguage("pt") : setlanguage("en");
-  };
   const router = useRouter();
   const pathname = usePathname();
   const currentLocale = pathname.split("/")[1] as CustomLocale;
