@@ -15,7 +15,7 @@ const Faqs = async ({ locale }: { locale: CustomLocale }) => {
   return (
     <div className="py-32">
       <Container>
-        <h1 className="text-xl font-bold pb-24">{faqs.title}</h1>
+        <h2 className="text-xl font-bold pb-24">{faqs.title}</h2>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-start">
