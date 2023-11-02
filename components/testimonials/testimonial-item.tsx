@@ -18,14 +18,14 @@ const TestimonialItem = ({
   comment,
 }: CarouselItemProps) => {
   return (
-    <div className="space-y-8 max-w-[432px] mx-auto text-center relative">
+    <div className="space-y-8 max-w-[432px] mx-auto text-center relative px-6">
       <div className="flex items-center justify-center">
         <div className="w-24 h-24 absolute">
           <div className="relative w-24 h-24 ml-[-50px]">
             <Image
               src={prevImage}
               loading="eager"
-              alt=""
+              alt="previous image"
               fill
               className="object-cover object-center rounded-full"
             />
@@ -36,7 +36,7 @@ const TestimonialItem = ({
             <Image
               src={image}
               loading="eager"
-              alt=""
+              alt="main image"
               fill
               className="object-cover object-center rounded-full"
             />
@@ -47,7 +47,7 @@ const TestimonialItem = ({
             <Image
               src={nextImage}
               loading="eager"
-              alt=""
+              alt="following image"
               fill
               className="object-cover object-center rounded-full ml-[50px]"
             />

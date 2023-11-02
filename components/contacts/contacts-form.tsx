@@ -18,27 +18,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
-import Heading from "../heading";
-import Container from "../container";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const prozaLibre = Proza_Libre({ subsets: ["latin"], weight: "700" });
-
-const formSchema = z.object({
-  name: z.string().min(1, {
-    message: "Name is required.",
-  }),
-  email: z.string().min(1, {
-    message: "Email is required.",
-  }),
-  subject: z.string().min(1, {
-    message: "Subject is required.",
-  }),
-  message: z.string().min(1, {
-    message: "Message is required.",
-  }),
-});
 
 type TContactsForm = {
   inputs: {
@@ -52,9 +35,39 @@ type TContactsForm = {
     subtitle: string;
   };
   buttonLabel: string;
+  messageError: {
+    [key: string]: {
+      message: string;
+    };
+  };
+  toasts: {
+    success: string;
+    error: string;
+  };
 };
 
-const ContactsForm = ({ inputs, heading, buttonLabel }: TContactsForm) => {
+const ContactsForm = ({
+  inputs,
+  heading,
+  buttonLabel,
+  messageError,
+  toasts,
+}: TContactsForm) => {
+  const formSchema = z.object({
+    name: z.string().min(1, {
+      message: messageError.name.message,
+    }),
+    email: z.string().min(1, {
+      message: messageError.email.message,
+    }),
+    subject: z.string().min(1, {
+      message: messageError.subject.message,
+    }),
+    message: z.string().min(1, {
+      message: messageError.message.message,
+    }),
+  });
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -75,8 +88,6 @@ const ContactsForm = ({ inputs, heading, buttonLabel }: TContactsForm) => {
       body: values.message,
     };
 
-    // TODO: Change text to dictionary
-    // Also add this variables to .env.
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -86,11 +97,11 @@ const ContactsForm = ({ inputs, heading, buttonLabel }: TContactsForm) => {
       )
       .then(
         () => {
-          toast.success("Email sent.");
+          toast.success(toasts.success);
           form.reset();
         },
         () => {
-          toast.success("Something went wrong.");
+          toast.success(toasts.error);
         }
       );
   };

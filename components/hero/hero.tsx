@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
 import Container from "../container";
 import { getDictionary } from "@/lib/get-dictionary";
 import { CustomLocale } from "@/types";
@@ -11,10 +10,10 @@ const Hero = async ({ locale }: { locale: CustomLocale }) => {
 
   return (
     <Container>
-      <div className="flex flex-col justify-between items-center lg:flex-row py-32 space-y-8 lg:space-y-0">
+      <div className="flex flex-col justify-between items-center lg:flex-row py-16 md:py-32 space-y-8 lg:space-y-0">
         <div className="space-y-8 text-center lg:text-start">
-          <div className="space-y-2 max-w-[500px] mx-auto">
-            <h1 className="text-6xl font-bold">{hero.title}</h1>
+          <div className="space-y-2 max-w-[550px] mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold">{hero.title}</h1>
             <p className="text-foreground/80">{hero.subtitle}</p>
           </div>
           <HeroButton buttonLabel={hero.button} />

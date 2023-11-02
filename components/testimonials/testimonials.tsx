@@ -1,45 +1,11 @@
-"use client";
-
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import Heading from "../heading";
-import TestimonialItem from "./testimonial-item";
 import Container from "../container";
+import TestimonialsSlider from "./testimonials-slider";
+import { getDictionary } from "@/lib/get-dictionary";
+import { CustomLocale } from "@/types";
 
-type SliderArrowProps = {
-  currentSlide?: number;
-  slideCount?: number;
-};
-
-const NextArrow = ({
-  currentSlide,
-  slideCount,
-  ...props
-}: SliderArrowProps) => <ChevronRight color="#3A3442" {...props} />;
-
-const PrevArrow = ({
-  currentSlide,
-  slideCount,
-  ...props
-}: SliderArrowProps) => <ChevronLeft color="#3A3442" {...props} />;
-
-const settings = {
-  dots: false,
-  infinite: true,
-  arrows: true,
-  pauseOnHover: false,
-  speed: 500,
-  autoplaySpeed: 5000,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  nextArrow: <NextArrow />,
-  prevArrow: <PrevArrow />,
-};
-
-const Testimonials = () => {
+const Testimonials = async ({ locale }: { locale: CustomLocale }) => {
   const people = [
     {
       image: "/assets/icons/paula.png",
@@ -64,29 +30,18 @@ const Testimonials = () => {
     },
   ];
 
+  const dictionary = await getDictionary(locale);
+  const testimonials = dictionary.testimonials;
+
   return (
     <div id="testimonials" className="mb-32">
       <Container>
         <Heading
-          title="What People Say About Us"
-          subtitle="Step into a realm of genuine appreciation and feedback from those we've had the privilege to serve."
+          title={testimonials.heading.title}
+          subtitle={testimonials.heading.subtitle}
           isBackgroundLight
         />
-        <Slider {...settings} className="mt-5 max-w-[688px] mx-auto">
-          {people.map((person, index) => (
-            <TestimonialItem
-              image={person.image}
-              prevImage={
-                people[(index - 1 + people.length) % people.length].image
-              }
-              nextImage={people[(index + 1) % people.length].image}
-              name={person.name}
-              type={person.type}
-              comment={person.comment.substring(0, 400)}
-              key={index}
-            />
-          ))}
-        </Slider>
+        <TestimonialsSlider items={people} />
       </Container>
     </div>
   );

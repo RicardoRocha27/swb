@@ -16,8 +16,10 @@ const Contacts = async ({ locale }: { locale: CustomLocale }) => {
             heading={contacts.heading}
             inputs={contacts.form.inputs}
             buttonLabel={contacts.form.buttonLabel}
+            messageError={contacts.form["message-error"]}
+            toasts={contacts.form.toasts}
           />
-          <ContactsInfo />
+          <ContactsInfo heading={contacts.subHeading} city={contacts.city} />
         </div>
       </Container>
       <div className="flex flex-col md:hidden space-y-28">
@@ -26,11 +28,13 @@ const Contacts = async ({ locale }: { locale: CustomLocale }) => {
             heading={contacts.heading}
             inputs={contacts.form.inputs}
             buttonLabel={contacts.form.buttonLabel}
+            messageError={contacts.form["message-error"]}
+            toasts={contacts.form.toasts}
           />
         </Container>
         <div className="bg-[#463F50] w-full h-full pb-64 md:hidden relative">
           <Container>
-            <ContactsInfo />
+            <ContactsInfo heading={contacts.subHeading} city={contacts.city} />
           </Container>
         </div>
       </div>

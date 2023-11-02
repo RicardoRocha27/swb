@@ -1,12 +1,15 @@
 import Image from "next/image";
 
-const ContactsInfo = () => {
+type TContactsInfo = {
+  heading: string;
+  city: string;
+};
+
+const ContactsInfo = ({ heading, city }: TContactsInfo) => {
   return (
     <div className="flex-1">
       <div className="flex-1 mt-28 md:mt-0 md:pt-48 space-y-24 md:relative z-10">
-        <h1 className="text-background text-xl font-bold">
-          More ways to connect
-        </h1>
+        <h1 className="text-background text-xl font-bold">{heading}</h1>
         <div className="space-y-8 text-background/80">
           <div className="flex items-center jus space-x-12">
             <Image
@@ -33,7 +36,7 @@ const ContactsInfo = () => {
               width={32}
               height={32}
             />
-            <p>Lisbon</p>
+            <p>{city}</p>
           </div>
         </div>
         <Image

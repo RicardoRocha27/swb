@@ -36,12 +36,12 @@
       "development": {
         "image": "/assets/icons/development-icon.svg",
         "title": "Web Development",
-        "text": "We will collaborate with you to create a website that embodies your brand's essence. Whether you envision a sleek, modern interface or a timeless, elegant design, we'll bring your vision to life."
+        "text": "We will turn your design into a seamless, responsive, and user-friendly website. We pride ourselves on writing clean, efficient code that ensures your site runs smoothly across all devices."
       },
       "copywrite": {
         "image": "/assets/icons/copywrite-icon.svg",
         "title": "Copywriting",
-        "text": "We will collaborate with you to create a website that embodies your brand's essence. Whether you envision a sleek, modern interface or a timeless, elegant design, we'll bring your vision to life."
+        "text": "Compelling content is the backbone of any successful online presence. From captivating headlines to engaging product descriptions, we'll ensure every word speaks volumes for your brand."
       }
     }
   },
@@ -54,7 +54,7 @@
       "tiago": {
         "image": "/assets/photos/tiago.png",
         "name": "Tiago Pereira",
-        "description": "Nostrud laboris id consectetur cillum culpa excepteur tempor laboris adipisicing consectetur pariatur fugiat sit cillum. Proident culpa sint aliquip eiusmod magna nisi et ut ad irure fugiat. Anim esse ad cillum id magna enim ullamco velit nulla enim tempor tempor excepteur.",
+        "description": "As an entrepreneur I'm constantly pursuing diverse avenues for learning, My fervor lies in effecting substantial change within the business and technology realm, where I aspire to generate significant and purposeful impact.",
         "href": "https://tiagopereira-portfolio.vercel.app/",
         "reversed": false,
         "buttonLabel": "Visit Website"
@@ -62,7 +62,7 @@
       "ricardo": {
         "image": "/assets/photos/ricardo.png",
         "name": "Ricardo Rocha",
-        "description": "Nostrud laboris id consectetur cillum culpa excepteur tempor laboris adipisicing consectetur pariatur fugiat sit cillum. Proident culpa sint aliquip eiusmod magna nisi et ut ad irure fugiat. Anim esse ad cillum id magna enim ullamco velit nulla enim tempor tempor excepteur.",
+        "description": "As a 24-year-old young adult, I possess a strong practical sense and competence that enables me to successfully tackle any task I undertake. I am consistently motivated to enhance my technological knowledge and stay abreast of the latest developments in the field.",
         "href": "https://ricardo-rocha.vercel.app/",
         "reversed": true,
         "buttonLabel": "Visit Website"
@@ -81,7 +81,7 @@
         "color": "#1893c6",
         "title": "Ás de saber",
         "subtitle": "Portuguese Tutoring Center",
-        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "text": "This website provides information about tutoring services for various school levels, subjects, high school exams in Portugal, and even select university courses. Users can explore the details of this tutoring center, available subjects, and even simulate the monthly cost of tutoring.",
         "services": {
           "web_design": true,
           "web_development": true,
@@ -94,7 +94,7 @@
         "color": "#c1a661",
         "title": "Casinhas do mémé",
         "subtitle": "Serra da Estrela House Rental Company",
-        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "text": "This website provides comprehensive information about the houses available for rent, the charming village of Manteigas where the houses are located, as well as insights into the stunning Serra da Estrela. Users can explore details about each house, including a gallery showcasing all the rooms of the property.",
         "services": {
           "web_design": true,
           "web_development": true,
@@ -107,7 +107,7 @@
         "color": "#0f172a",
         "title": "Jokes Aside",
         "subtitle": "Social Platform for Humour Enthusiasts",
-        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "text": "Dive into a world of humor, interact with funny posts, and explore comedic content. Show your appreciation with likes, engage in conversations through comments, and peek into fellow users' profiles to see their interactions. Keep an eye on the leaderboard to discover users with the most accumulated likes. ",
         "services": {
           "web_design": true,
           "web_development": true,
@@ -116,13 +116,19 @@
       }
     }
   },
-  "testimonials": {},
+  "testimonials": {
+    "heading": {
+      "title": "What People Say About Us",
+      "subtitle": "Step into a realm of genuine appreciation and feedback from those we've had the privilege to serve"
+    }
+  },
   "contacts": {
     "heading": {
       "title": "Get in touch",
       "subtitle": "Need assistance? Send us a message"
     },
     "subHeading": "More ways to connect",
+    "city": "Lisbon",
     "form": {
       "inputs": {
         "name": {
@@ -142,7 +148,25 @@
           "placeholder": "Message"
         }
       },
-      "buttonLabel": "Send Message"
+      "buttonLabel": "Send Message",
+      "message-error": {
+        "name": {
+          "message": "Name is required."
+        },
+        "email": {
+          "message": "Email is required."
+        },
+        "subject": {
+          "message": "Name is required."
+        },
+        "message": {
+          "message": "Name is required."
+        }
+      },
+      "toasts": {
+        "success": "Email sent successfully.",
+        "error": "An error occurred. Please try again later."
+      }
     }
   },
   "faqs": {

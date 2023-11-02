@@ -1,78 +1,78 @@
 {
   "routes": {
     "services": {
-      "label": "Services",
+      "label": "Serviços",
       "path": "services"
     },
     "about": {
-      "label": "About",
+      "label": "Sobre nós",
       "path": "about"
     },
     "portfolio": {
-      "label": "Portfolio",
+      "label": "Portfólio",
       "path": "portfolio"
     },
     "testimonials": {
-      "label": "Testimonials",
+      "label": "Testemunhos",
       "path": "testimonials"
     }
   },
   "hero": {
-    "title": "We Build Your Future Online",
-    "subtitle": "Crafting dynamic, user-centric online experiences that go beyond the ordinary. We shape destinies, not just websites.",
-    "button": "Get in touch"
+    "title": "Construímos o Seu Futuro Online",
+    "subtitle": "Criamos experiências online dinâmicas e centradas no utilizador que vão para além do comum. Moldamos destinos, não apenas websites.",
+    "button": "Contacte-nos"
   },
   "services": {
     "heading": {
-      "title": "Tailored Solutions",
-      "subtitle": "Crafting highly personalized strategies for unparalleled, far-reaching impact"
+      "title": "Soluções Personalizadas",
+      "subtitle": "Desenvolvemos estratégias altamente personalizadas para um impacto abrangente e sem precedentes."
     },
     "info": {
       "design": {
         "image": "/assets/icons/design-icon.svg",
-        "title": "Web Design",
-        "text": "We will collaborate with you to create a website that embodies your brand's essence. Whether you envision a sleek, modern interface or a timeless, elegant design, we'll bring your vision to life."
+        "title": "Design de Websites",
+        "text": "Vamos colaborar consigo para desenhar um website que incorpore a essência da sua marca. Quer visualize uma interface elegante e moderna ou um design intemporal e elegante, daremos vida à sua visão."
       },
       "development": {
         "image": "/assets/icons/development-icon.svg",
-        "title": "Web Development",
-        "text": "We will collaborate with you to create a website that embodies your brand's essence. Whether you envision a sleek, modern interface or a timeless, elegant design, we'll bring your vision to life."
+        "title": "Desenvolvimento de Websites",
+        "text": "Vamos transformar o seu design num website responsivo e fácil de usar. Orgulhamo-nos de escrever código limpo e eficiente que garante o funcionamento fluído do seu site em todos os dispositivos."
       },
       "copywrite": {
         "image": "/assets/icons/copywrite-icon.svg",
         "title": "Copywriting",
-        "text": "We will collaborate with you to create a website that embodies your brand's essence. Whether you envision a sleek, modern interface or a timeless, elegant design, we'll bring your vision to life."
+        "text": "Conteúdo cativante é o pilar de qualquer presença online bem-sucedida. Desde manchetes envolventes até descrições de produtos cativantes, asseguraremos que cada palavra transmita a essência da sua marca com impacto."
       }
     }
   },
   "about": {
     "heading": {
-      "title": "Who Are We?",
-      "subtitle": "Delve into the core of our organization and uncover the driving forces behind our shared mission."
+      "title": "Quem Somos?",
+      "subtitle": "Conheça a nossa organização e descubra o que nos motiva."
     },
     "info": {
       "tiago": {
         "image": "/assets/photos/tiago.png",
         "name": "Tiago Pereira",
-        "description": "Nostrud laboris id consectetur cillum culpa excepteur tempor laboris adipisicing consectetur pariatur fugiat sit cillum. Proident culpa sint aliquip eiusmod magna nisi et ut ad irure fugiat. Anim esse ad cillum id magna enim ullamco velit nulla enim tempor tempor excepteur.",
+        "description": "Enquanto jovem empreendedor estou constantemente em busca de novas oportunidades de aprendizagem para impulsionar o meu crescimento pessoal e profissional. Motivado por criar um impacto significativo no mundo dos negócios e da tecnologia.",
         "href": "https://tiagopereira-portfolio.vercel.app/",
         "reversed": false,
-        "buttonLabel": "Visit Website"
+        "buttonLabel": "Visitar Website"
       },
       "ricardo": {
         "image": "/assets/photos/ricardo.png",
         "name": "Ricardo Rocha",
-        "description": "Nostrud laboris id consectetur cillum culpa excepteur tempor laboris adipisicing consectetur pariatur fugiat sit cillum. Proident culpa sint aliquip eiusmod magna nisi et ut ad irure fugiat. Anim esse ad cillum id magna enim ullamco velit nulla enim tempor tempor excepteur.",
+        "description": "Enquanto jovem adulto de 24 anos, possuo um sólido sentido prático e competências que me permitem lidar com sucesso qualquer tarefa que assumo. Estou constantemente motivado para aprimorar o meu conhecimento tecnológico e manter-me atualizado com os últimos desenvolvimentos nesta área.",
         "href": "https://ricardo-rocha.vercel.app/",
         "reversed": true,
-        "buttonLabel": "Visit Website"
+        "buttonLabel": "Visitar Website"
       }
     }
   },
   "projects": {
     "heading": {
-      "title": "Our Projects",
-      "subtitle": "Explore the culmination of our relentless pursuit of excellence"
+      "title": "Os Nossos Projetos",
+      "subtitle": "Explore a culminação da nossa incessante busca pela excelência."
     },
     "info": {
       "asdesaber": {
@@ -80,8 +80,8 @@
         "image": "/assets/photos/asdesaber-photo.png",
         "color": "#1893c6",
         "title": "Ás de saber",
-        "subtitle": "Portuguese Tutoring Center",
-        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "subtitle": "Centro de Explicações em Portugal",
+        "text": "Este website disponibiliza informações sobre serviços de apoio ao estudo para vários níveis escolares, disciplinas, exames do ensino secundário em Portugal, e até mesmo cursos específicos da universidade. Os utilizadores podem explorar os detalhes deste centro de apoio ao estudo, disciplinas disponíveis e até simular o custo mensal do plano desejado.",
         "services": {
           "web_design": true,
           "web_development": true,
@@ -93,8 +93,8 @@
         "image": "/assets/photos/meme-photo.png",
         "color": "#c1a661",
         "title": "Casinhas do mémé",
-        "subtitle": "Serra da Estrela House Rental Company",
-        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "subtitle": "Empresa de Aluguer de Casas na Serra da Estrela",
+        "text": "Este website disponibiliza informações detalhadas sobre as casas disponíveis para aluguer, a encantadora vila de Manteigas onde as casas se encontram, bem como informações sobre a deslumbrante Serra da Estrela. Os utilizadores podem explorar detalhes sobre cada casa, incluindo uma galeria que mostra todos as divisões da propriedade.",
         "services": {
           "web_design": true,
           "web_development": true,
@@ -106,8 +106,8 @@
         "image": "/assets/photos/jokes-photo.png",
         "color": "#0f172a",
         "title": "Jokes Aside",
-        "subtitle": "Social Platform for Humour Enthusiasts",
-        "text": "Lorem ipsum dolor sit amet consectetur. Consectetur neque fermentum sodales vitae enim libero dolor sit. Nisi gravida duis volutpat velit congue aliquet.",
+        "subtitle": "Plataforma Social para Entusiastas de Humor",
+        "text": "Mergulha num mundo de humor, interage com publicações engraçadas, e explora uma seleção de conteúdo cómico. Demonstra o teu apreço com gostos, participa em conversas através de comentários, e espreita os perfis dos outros utilizadores para ver as suas interações. Mantém um olho no quadro de liderança para descobrir os utilizadores com mais gostos acumulados.",
         "services": {
           "web_design": true,
           "web_development": true,
@@ -116,37 +116,61 @@
       }
     }
   },
-  "testimonials": {},
+  "testimonials": {
+    "heading": {
+      "title": "O que dizem sobre nós",
+      "subtitle": "Entre num espaço de genuína apreciação e feedback daqueles a quem tivemos o privilégio de servir."
+    }
+  },
   "contacts": {
     "heading": {
-      "title": "Get in touch",
-      "subtitle": "Need assistance? Send us a message"
+      "title": "Entre em contacto",
+      "subtitle": "Precisa de ajuda? Envie-nos uma mensagem"
     },
-    "subHeading": "More ways to connect",
+    "subHeading": "Outras formas de contacto",
+    "city": "Lisboa",
     "form": {
       "inputs": {
         "name": {
-          "label": "Name",
-          "placeholder": "Name"
+          "label": "Nome",
+          "placeholder": "Nome"
         },
         "email": {
           "label": "Email",
           "placeholder": "Email"
         },
         "subject": {
-          "label": "Subject",
-          "placeholder": "Subject"
+          "label": "Assunto",
+          "placeholder": "Assunto"
         },
         "message": {
-          "label": "Message",
-          "placeholder": "Message"
+          "label": "Mensagem",
+          "placeholder": "Mensagem"
         }
       },
-      "buttonLabel": "Send Message"
+      "buttonLabel": "Enviar Mensagem",
+      "message-error": {
+        "name": {
+          "message": "O nome é obrigatório."
+        },
+        "email": {
+          "message": "O email é obrigatório."
+        },
+        "subject": {
+          "message": "O assunto é obrigatório."
+        },
+        "message": {
+          "message": "A mensagem é obrigatório."
+        }
+      },
+      "toasts": {
+        "success": "Email enviado com sucesso.",
+        "error": "Ocorreu um erro. Por favor tente mais tarde."
+      }
     }
   },
   "faqs": {
-    "title": "Frequently Asked Questions (FAQs)",
+    "title": "Perguntas Frequentes (FAQs)",
     "questions": {
       "1": {
         "question": "",

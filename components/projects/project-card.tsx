@@ -55,7 +55,7 @@ const ProjectCard = ({
             className="md:absolute md:ml-24 md:px-8"
           />
         </div>
-        <div className="p-8 flex flex-col justify-between md:max-w-[500px] md:ml-36 space-y-8 ">
+        <div className="p-8 flex flex-col justify-between md:max-w-[550px] md:ml-36 space-y-8 ">
           <div className="flex items-center space-x-4">
             <p>{title}</p>
             <div
@@ -75,16 +75,16 @@ const ProjectCard = ({
             <h1 className="text-xl font-bold">{subtitle}</h1>
             <p>{text}</p>
           </div>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0">
+          <div className="flex items-center gap-4 flex-wrap">
             {Object.entries(services).map(
               (service, index) =>
                 service[1] && (
-                  <div
+                  <p
                     key={index}
-                    className="bg-[#efefef] p-3 rounded-lg w-fit"
+                    className="bg-[#efefef] p-3 rounded-lg w-fit text-xs text-center"
                   >
                     {transformServiceName(service[0])}
-                  </div>
+                  </p>
                 )
             )}
           </div>

@@ -18,7 +18,7 @@ export default function Home({
       <Services locale={locale} />
       <About locale={locale} />
       <Projects locale={locale} />
-      <Testimonials />
+      <Testimonials locale={locale} />
       <Contacts locale={locale} />
       <Faqs locale={locale} />
     </div>
