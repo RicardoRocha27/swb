@@ -11,7 +11,8 @@ const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Super Web Builders - SWB Official",
-  description: "Super Web Builders official",
+  description:
+    "Crafting dynamic, user-centric online experiences that go beyond the ordinary. We shape destinies, not just websites.",
 };
 
 export default function RootLayout({
