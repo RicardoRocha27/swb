@@ -4,6 +4,7 @@ import { Switch } from "@/components/ui/switch";
 import { cn } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 import { CustomLocale } from "@/types";
+import { Label } from "../ui/label";
 
 const LanguageToggle = () => {
   const router = useRouter();
@@ -18,17 +19,21 @@ const LanguageToggle = () => {
   return (
     <div className={cn("flex  space-x-2 w-fit")}>
       <Switch
-        onClick={() =>
+        id="switch-language"
+        checked={currentLocale === "en"}
+        onCheckedChange={() =>
           currentLocale === "pt"
             ? handleChangeLocale("en")
             : handleChangeLocale("pt")
         }
         className="mx-auto"
       />
-
-      <p className={cn("mx-auto font-medium text-base")}>
+      <Label
+        htmlFor="switch-language"
+        className={cn("mx-auto font-medium text-base")}
+      >
         {currentLocale === "pt" ? "Português" : "English"}
-      </p>
+      </Label>
     </div>
   );
 };
