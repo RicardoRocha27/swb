@@ -12,21 +12,21 @@ const Testimonials = async ({ locale }: { locale: CustomLocale }) => {
       name: "Paula",
       type: "Client",
       comment:
-        "Lorem ipsum dolor sit amet consectetur. Neque parturient orci sit condimentum turpis venenatis venenatis sit quisque. Erat egestas sem ultricies amet mi. Magna feugiat interdum at varius duis augue. Cursus porttitor ullamcorper dolor imperdiet non purus quis.",
+        "The whole process was really simple from the conceptualization to the delivery. The final product was even better than I imagined and as a result you have a really happy customer that knows exactly where to come if it surges the need for this specialized help again.",
     },
     {
       image: "/assets/icons/marta.png",
       name: "Marta",
       type: "Client",
       comment:
-        "Lorem ipsum dolor sit amet consectetur. Neque parturient orci sit condimentum turpis venenatis venenatis sit quisque. Erat egestas sem ultricies amet mi. Magna feugiat interdum at varius duis augue. Cursus porttitor ullamcorper dolor imperdiet non purus quis.",
+        "I especially liked the design process as I was receiving and giving constant feedback and therefore I knew exactly how it was going and that surely was a big plus on the process. The website, I believe it speaks for it self.",
     },
     {
       image: "/assets/icons/martim.jpeg",
       name: "Martim",
-      type: "Coursemate",
+      type: "Client",
       comment:
-        "Lorem ipsum dolor sit amet consectetur. Neque parturient orci sit condimentum turpis venenatis venenatis sit quisque. Erat egestas sem ultricies amet mi. Magna feugiat interdum at varius duis augue. Cursus porttitor ullamcorper dolor imperdiet non purus quis.",
+        "As someone who also writes code I must say I was impressed on the delivery time since it is everything but easy to code an entire web application that works flawlessly. That aligned with the incredible interface made this even better than what I was looking for.",
     },
   ];
 
