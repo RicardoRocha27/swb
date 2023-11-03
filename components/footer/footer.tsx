@@ -14,9 +14,9 @@ const Footer = () => {
               height={23}
             />
             <div className="h-4 border-r-2 border-r-background/80" />
-            {/* TODO: Change linkedin link. */}
             <Link
-              href={""}
+              href={"https://linkedin.com/company/superwebbuilders"}
+              target="_blank"
               className="rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
             >
               <Image

@@ -49,7 +49,10 @@ const MobileNavbar = ({ routes }: TMobileNavbar) => {
               </nav>
               <SheetFooter>
                 <div className="flex gap-x-4 items-center mt-8 w-full">
-                  <Link href={"/"} target="_blank">
+                  <Link
+                    href={"https://linkedin.com/company/superwebbuilders"}
+                    target="_blank"
+                  >
                     <Image
                       src={"/assets/icons/linkedin-icon.svg"}
                       alt="linkedin"

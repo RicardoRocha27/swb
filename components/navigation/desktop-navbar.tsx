@@ -32,9 +32,9 @@ const DesktopNavbar = ({ routes }: TDesktopNavbar) => {
             ))}
           </div>
           <div className="flex items-center space-x-8">
-            {/* TODO: Change linkedin link. */}
             <Link
-              href={""}
+              href={"https://linkedin.com/company/superwebbuilders"}
+              target="_blank"
               className="rounded-md ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
             >
               <Image
