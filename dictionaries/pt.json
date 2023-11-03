@@ -173,16 +173,16 @@
     "title": "Perguntas Frequentes (FAQs)",
     "questions": {
       "1": {
-        "question": "",
-        "answer": ""
+        "question": "Como posso verificar o progresso do meu projeto?",
+        "answer": "Não se preocupe, partilhamos os ficheiros consigo para que os possa verificar sempre que desejar!"
       },
       "2": {
-        "question": "",
-        "answer": ""
+        "question": "Existe alguma forma do cliente poder alterar o website após a entrega?",
+        "answer": "Claro, nenhum website é completamente estático! Normalmente, para a fase pós-entrega, acordamos com o cliente os termos se houver necessidade de fazer alguma alteração mais tarde."
       },
       "3": {
-        "question": "",
-        "answer": ""
+        "question": "Qual é o tempo de entrega para um projeto?",
+        "answer": "Depende amplamente do projeto e se é um projeto de design, de desenvolvimento ou talvez ambos."
       }
     }
   }

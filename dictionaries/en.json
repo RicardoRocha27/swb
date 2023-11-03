@@ -173,16 +173,16 @@
     "title": "Frequently Asked Questions (FAQs)",
     "questions": {
       "1": {
-        "question": "",
-        "answer": ""
+        "question": "How can I check on the progress of my project?",
+        "answer": "Don't worry, we share our files with you so you can check it whenever you desire!"
       },
       "2": {
-        "question": "",
-        "answer": ""
+        "question": "Is there any way for the client to be able to change the website after the delivery?",
+        "answer": "Of course, no website is completely static! Normally for the post delivery part we agree with the client the terms if there is the need to change anything later down the line."
       },
       "3": {
-        "question": "",
-        "answer": ""
+        "question": "What is the delivery time for a project?",
+        "answer": "It broadly depends on the project and if it is a design, a development project or maybe both."
       }
     }
   }
