@@ -19,26 +19,31 @@ const Faqs = async ({ locale }: { locale: CustomLocale }) => {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-start">
-              Como é que o Gyokeres é tão máquina?
+              How can I check on the progress of my project?
             </AccordionTrigger>
             <AccordionContent className="text-start">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Don&apos;t worry, we share our files with you so you can check it
+              whenever you desire!
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-start">
-              Porque é que o Paulinho ainda joga no Sporting?
+              Is there any way for the client to be able to change the website
+              after the delivery?
             </AccordionTrigger>
             <AccordionContent className="text-start">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Of course, no website is completely static! Normally for the post
+              delivery part we agree with the client the terms if there is the
+              need to change anything later down the line.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className="text-start">
-              Porque é que o Esgaio ainda não foi para o City por 110M?
+              What is the delivery time for a project?
             </AccordionTrigger>
             <AccordionContent className="text-start">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              It broadly depends on the project and if it is a design, a
+              development project or maybe both.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
