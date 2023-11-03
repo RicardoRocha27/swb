@@ -4,6 +4,7 @@ import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Proza_Libre } from "next/font/google";
+import { motion } from "framer-motion";
 
 import {
   Form,
@@ -191,15 +192,25 @@ const ContactsForm = ({
                 </FormItem>
               )}
             />
-            <Button variant={"secondary"} className="space-x-2 mt-8">
-              <p>{buttonLabel}</p>
-              <Image
-                src={"/assets/icons/send-icon.svg"}
-                alt="send"
-                width={24}
-                height={24}
-              />
-            </Button>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="w-fit"
+            >
+              <Button
+                variant={"secondary"}
+                className="space-x-2 mt-8"
+                disabled={isLoading}
+              >
+                <p>{buttonLabel}</p>
+                <Image
+                  src={"/assets/icons/send-icon.svg"}
+                  alt="send"
+                  width={24}
+                  height={24}
+                />
+              </Button>
+            </motion.div>
           </form>
         </Form>
       </div>
