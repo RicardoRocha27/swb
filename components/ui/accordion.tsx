@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
 
 import { cn } from "@/lib/utils";
@@ -50,14 +50,15 @@ const AccordionTrigger = React.forwardRef<
           })
         }
         onMouseLeave={() => controls.start({ y: 0 })}
-        onClick={() => {
-          controls.start({ rotate: isOpen ? 0 : 180 });
-          handleToggleAccordion();
-        }}
+        onClick={handleToggleAccordion}
       >
         {children}
         <motion.div animate={controls}>
-          <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+          {isOpen ? (
+            <ChevronUp className="h-4 w-4 shrink-0 transition-transform duration-200" />
+          ) : (
+            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+          )}
         </motion.div>
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
