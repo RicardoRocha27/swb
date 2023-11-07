@@ -2,26 +2,31 @@
 
 import ServiceItem from "./service-item";
 
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+// import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
 
 const ServicesList = ({ services }: { services: any }) => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
+  // const [ref, inView] = useInView({
+  //   triggerOnce: true,
+  // });
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
       {Object.values(services.info).map((item: any, index) => (
-        <motion.div
+        // <motion.div
+        //   key={index}
+        //   ref={ref}
+        //   initial={{ opacity: 0, y: 50 }}
+        //   animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+        //   transition={{ duration: 1, delay: index * 0.3 }}
+        // >
+        <ServiceItem
           key={index}
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-          transition={{ duration: 1, delay: index * 0.3 }}
-        >
-          <ServiceItem image={item.image} title={item.title} text={item.text} />
-        </motion.div>
+          image={item.image}
+          title={item.title}
+          text={item.text}
+        />
+        // </motion.div>
       ))}
     </div>
   );
