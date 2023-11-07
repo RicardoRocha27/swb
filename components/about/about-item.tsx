@@ -29,7 +29,7 @@ const AboutItem = ({
     >
       <div className={cn("mx-auto sm:mx-0 order-1", reversed && "sm:order-2")}>
         <Image
-          className={cn(reversed && "sm:ml-auto")}
+          className={cn("rounded-sm", reversed && "sm:ml-auto")}
           src={image}
           alt={title}
           width={300}
