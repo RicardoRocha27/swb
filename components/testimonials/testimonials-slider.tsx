@@ -52,8 +52,6 @@ const TestimonialsSlider = ({ items }: TTestimonialsSlider) => {
       {items.map((person, index) => (
         <TestimonialItem
           image={person.image}
-          prevImage={items[(index - 1 + items.length) % items.length].image}
-          nextImage={items[(index + 1) % items.length].image}
           name={person.name}
           type={person.type}
           comment={person.comment.substring(0, 400)}

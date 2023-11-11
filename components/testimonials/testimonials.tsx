@@ -22,11 +22,11 @@ const Testimonials = async ({ locale }: { locale: CustomLocale }) => {
         "I especially liked the design process as I was receiving and giving constant feedback and therefore I knew exactly how it was going and that surely was a big plus on the process. The website, I believe it speaks for it self.",
     },
     {
-      image: "/assets/icons/martim.jpeg",
-      name: "Martim",
+      image: "",
+      name: "Paulo",
       type: "Client",
       comment:
-        "As someone who also writes code I must say I was impressed on the delivery time since it is everything but easy to code an entire web application that works flawlessly. That aligned with the incredible interface made this even better than what I was looking for.",
+        "I especially liked the design process as I was receiving and giving constant feedback and therefore I knew exactly how it was going and that surely was a big plus on the process. The website, I believe it speaks for it self.",
     },
   ];
 
