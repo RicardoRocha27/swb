@@ -20,17 +20,6 @@ const TestimonialItem = ({
   return (
     <div className="space-y-8 max-w-[432px] mx-auto text-center relative px-6">
       <div className="flex items-center justify-center">
-        <div className="w-24 h-24 absolute">
-          <div className="relative w-24 h-24 ml-[-50px]">
-            <Image
-              src={prevImage}
-              loading="eager"
-              alt="previous image"
-              fill
-              className="object-cover object-center rounded-full"
-            />
-          </div>
-        </div>
         <div className="w-24 h-24 z-10 rounded-full ring ring-offset-0 ring-background">
           <div className="relative w-24 h-24">
             <Image
@@ -39,17 +28,6 @@ const TestimonialItem = ({
               alt="main image"
               fill
               className="object-cover object-center rounded-full"
-            />
-          </div>
-        </div>
-        <div className="w-24 h-24 absolute">
-          <div className="relative w-24 h-24 mr-[-50px]">
-            <Image
-              src={nextImage}
-              loading="eager"
-              alt="following image"
-              fill
-              className="object-cover object-center rounded-full ml-[50px]"
             />
           </div>
         </div>
