@@ -1,20 +1,28 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="w-full bg-foreground py-4">
       <div className="flex flex-col items-center space-y-4">
         <div className="flex justify-center items-center">
           <div className="flex items-center space-x-8">
-            <Link href={"/"}>
+            <div onClick={scrollToTop} className="cursor-pointer">
               <Image
                 src={"/assets/brand/text-logo.svg"}
                 alt="SWB"
                 width={70}
                 height={23}
               />
-            </Link>
+            </div>
             <div className="h-4 border-r-2 border-r-background/80" />
             <Link
               href={"https://linkedin.com/company/superwebbuilders"}
