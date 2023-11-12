@@ -38,18 +38,13 @@ const settings = {
 };
 
 type TTestimonialsSlider = {
-  items: {
-    image: string;
-    name: string;
-    type: string;
-    comment: string;
-  }[];
+  items: any;
 };
 
 const TestimonialsSlider = ({ items }: TTestimonialsSlider) => {
   return (
     <Slider {...settings} className="mt-5 max-w-[688px] mx-auto">
-      {items.map((person, index) => (
+      {Object.values(items).map((person: any, index) => (
         <TestimonialItem
           image={person.image}
           name={person.name}

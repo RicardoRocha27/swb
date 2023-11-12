@@ -6,30 +6,6 @@ import { getDictionary } from "@/lib/get-dictionary";
 import { CustomLocale } from "@/types";
 
 const Testimonials = async ({ locale }: { locale: CustomLocale }) => {
-  const people = [
-    {
-      image: "/assets/icons/paula.png",
-      name: "Paula",
-      type: "Client",
-      comment:
-        "The whole process was really simple from the conceptualization to the delivery. The final product was even better than I imagined and as a result you have a really happy customer that knows exactly where to come if it surges the need for this specialized help again.",
-    },
-    {
-      image: "/assets/icons/marta.png",
-      name: "Marta",
-      type: "Client",
-      comment:
-        "I especially liked the design process as I was receiving and giving constant feedback and therefore I knew exactly how it was going and that surely was a big plus on the process. The website, I believe it speaks for it self.",
-    },
-    {
-      image: "",
-      name: "Paulo",
-      type: "Client",
-      comment:
-        "I especially liked the design process as I was receiving and giving constant feedback and therefore I knew exactly how it was going and that surely was a big plus on the process. The website, I believe it speaks for it self.",
-    },
-  ];
-
   const dictionary = await getDictionary(locale);
   const testimonials = dictionary.testimonials;
 
@@ -41,7 +17,7 @@ const Testimonials = async ({ locale }: { locale: CustomLocale }) => {
           subtitle={testimonials.heading.subtitle}
           isBackgroundLight
         />
-        <TestimonialsSlider items={people} />
+        <TestimonialsSlider items={testimonials.people} />
       </Container>
     </div>
   );
