@@ -1,9 +1,9 @@
 "use client";
-
-import { ArrowUp } from "lucide-react";
+import { CustomLocale } from "@/types";
+import { ArrowRight } from "lucide-react";
 import React, { useState, useEffect } from "react";
 
-const ScrollToTop = () => {
+const ScrollToTop = ({ locale }: { locale: CustomLocale }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const scrollToTop = () => {
@@ -32,10 +32,16 @@ const ScrollToTop = () => {
   return (
     isVisible && (
       <div
-        className="flex w-fit z-20 justify-center items-center rounded-full bg-primary hover:bg-primary/70 fixed cursor-pointer bottom-5 left-5 duration-300"
+        className=" hidden group xl:flex w-fit z-20 justify-center items-center fixed cursor-pointer bottom-16 left-2 duration-300 -rotate-90 hover:text-accent/80 hover:scale-105"
         onClick={scrollToTop}
       >
-        <ArrowUp size={20} className="text-background m-2" />
+        <p className="text-accent group-hover:text-accent/70 transition-colors">
+          {locale === "en" ? "Go to top" : "Ir para cima"}
+        </p>
+        <ArrowRight
+          size={20}
+          className="text-accent ml-1 group-hover:text-accent/70 transition-colors"
+        />
       </div>
     )
   );

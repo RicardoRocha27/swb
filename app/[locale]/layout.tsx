@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={urbanist.className}>
-        <ScrollToTop />
+        <ScrollToTop locale={locale} />
         <Navbar locale={locale} />
         {children}
         <Footer />
