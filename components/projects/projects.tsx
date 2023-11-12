@@ -3,6 +3,7 @@ import Container from "../container";
 import Heading from "../heading";
 import ProjectCard from "./project-card";
 import { getDictionary } from "@/lib/get-dictionary";
+import ProjectCardAnimated from "./project-card-animated";
 
 const Projects = async ({ locale }: { locale: CustomLocale }) => {
   const dictionary = await getDictionary(locale);
@@ -18,16 +19,30 @@ const Projects = async ({ locale }: { locale: CustomLocale }) => {
         />
         <div className="flex flex-col space-y-24">
           {Object.values(projects.info).map((project, index) => (
-            <ProjectCard
-              key={index}
-              href={project.href}
-              image={project.image}
-              color={project.color}
-              title={project.title}
-              text={project.text}
-              subtitle={project.subtitle}
-              services={project.services}
-            />
+            <div key={index}>
+              <div className="hidden md:block">
+                <ProjectCardAnimated
+                  href={project.href}
+                  image={project.image}
+                  color={project.color}
+                  title={project.title}
+                  text={project.text}
+                  subtitle={project.subtitle}
+                  services={project.services}
+                />
+              </div>
+              <div className="flex md:hidden">
+                <ProjectCard
+                  href={project.href}
+                  image={project.image}
+                  color={project.color}
+                  title={project.title}
+                  text={project.text}
+                  subtitle={project.subtitle}
+                  services={project.services}
+                />
+              </div>
+            </div>
           ))}
         </div>
       </Container>
