@@ -34,7 +34,7 @@ const MobileNavbar = ({ routes }: TMobileNavbar) => {
       <div className="my-2">
         <Sheet>
           <SheetTrigger asChild>
-            <Menu className="text-foreground cursor-pointer" />
+            <Menu className="text-foreground cursor-pointer" aria-hidden />
           </SheetTrigger>
           <SheetContent className="md:hidden">
             <div className="relative h-full">

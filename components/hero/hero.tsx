@@ -24,6 +24,7 @@ const Hero = async ({ locale }: { locale: CustomLocale }) => {
             alt="illustration"
             width={721}
             height={481}
+            loading="eager"
           />
         </div>
       </div>
