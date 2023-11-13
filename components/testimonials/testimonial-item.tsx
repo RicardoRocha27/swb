@@ -12,7 +12,7 @@ const TestimonialItem = ({ image, name, type, comment }: CarouselItemProps) => {
     <div className="space-y-8 max-w-[432px] mx-auto text-center relative px-6">
       <div className="flex items-center justify-center">
         <div className="w-24 h-24 z-10 rounded-full ring ring-offset-0 ring-background">
-          <div className="relative w-24 h-24">
+          <div className="relative mx-auto w-24 h-24">
             {image ? (
               <Image
                 src={image}
@@ -22,7 +22,7 @@ const TestimonialItem = ({ image, name, type, comment }: CarouselItemProps) => {
                 className="object-cover object-center rounded-full shadow-md"
               />
             ) : (
-              <div className="bg-primary text-background shadow-md rounded-full h-full w-full flex items-center justify-center font-bold text-3xl">
+              <div className="bg-primary mx-auto text-background shadow-md rounded-full h-full w-full flex items-center justify-center font-bold text-3xl">
                 {name.charAt(0)}
               </div>
             )}
