@@ -25,7 +25,7 @@ const AboutItem = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-24 sm:h-[354px] sm:max-h-[354px]",
+        "grid grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-24 md:h-[354px]",
         reversed && "mb-0"
       )}
     >
