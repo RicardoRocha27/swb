@@ -32,7 +32,7 @@ const ScrollToTop = () => {
   return (
     isVisible && (
       <div
-        className="flex w-fit z-20 justify-center items-center rounded-full bg-primary hover:bg-primary/70 fixed cursor-pointer bottom-5 left-5 duration-300"
+        className="flex w-fit z-20 justify-center items-center rounded-full bg-accent hover:bg-accent/70 fixed cursor-pointer bottom-5 left-5 duration-300"
         onClick={scrollToTop}
       >
         <ArrowUp size={20} className="text-background m-2" />
