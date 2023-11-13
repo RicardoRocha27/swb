@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
-import { Button } from "../ui/button";
 import { motion } from "framer-motion";
+import Image from "next/image";
+
+import { Button } from "@/components/ui/button";
 
 const HeroButton = ({ buttonLabel }: { buttonLabel: string }) => {
   const handleScroll = (id: string) => {

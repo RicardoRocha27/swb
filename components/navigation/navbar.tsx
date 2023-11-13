@@ -1,6 +1,7 @@
 import { CustomLocale } from "@/types";
-import DesktopNavbar from "./desktop-navbar";
 import { getDictionary } from "@/lib/get-dictionary";
+
+import DesktopNavbar from "./desktop-navbar";
 import MobileNavbar from "./mobile-navbar";
 
 type TNavbar = {

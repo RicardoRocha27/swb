@@ -1,8 +1,9 @@
 import { CustomLocale } from "@/types";
-import Container from "../container";
+import { getDictionary } from "@/lib/get-dictionary";
+import Container from "@/components/container";
+
 import ContactsForm from "./contacts-form";
 import ContactsInfo from "./contacts-info";
-import { getDictionary } from "@/lib/get-dictionary";
 
 const Contacts = async ({ locale }: { locale: CustomLocale }) => {
   const dictionary = await getDictionary(locale);

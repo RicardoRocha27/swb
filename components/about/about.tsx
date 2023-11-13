@@ -1,9 +1,11 @@
 import React from "react";
-import Container from "../container";
-import Heading from "../heading";
-import AboutItem from "./about-item";
-import { CustomLocale } from "@/types";
+
 import { getDictionary } from "@/lib/get-dictionary";
+import { CustomLocale } from "@/types";
+import Heading from "@/components/heading";
+import Container from "@/components/container";
+
+import AboutItem from "./about-item";
 import AboutItemAnimated from "./about-item-animated";
 
 const About = async ({ locale }: { locale: CustomLocale }) => {

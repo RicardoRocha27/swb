@@ -1,7 +1,9 @@
 import Image from "next/image";
-import Container from "../container";
+
+import Container from "@/components/container";
 import { getDictionary } from "@/lib/get-dictionary";
 import { CustomLocale } from "@/types";
+
 import HeroButton from "./hero-button";
 
 const Hero = async ({ locale }: { locale: CustomLocale }) => {

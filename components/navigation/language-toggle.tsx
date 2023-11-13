@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
-import { Switch } from "@/components/ui/switch";
-import { cn } from "@/lib/utils";
+
 import { usePathname, useRouter } from "next/navigation";
+import React from "react";
+
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
 import { CustomLocale } from "@/types";
-import { Label } from "../ui/label";
 
 const LanguageToggle = () => {
   const router = useRouter();

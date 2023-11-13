@@ -1,12 +1,13 @@
 import { CustomLocale } from "@/types";
-import Container from "../container";
+import { getDictionary } from "@/lib/get-dictionary";
+
+import Container from "@/components/container";
 import {
   Accordion,
   AccordionTrigger,
   AccordionItem,
   AccordionContent,
-} from "../ui/accordion";
-import { getDictionary } from "@/lib/get-dictionary";
+} from "@/components/ui/accordion";
 
 const Faqs = async ({ locale }: { locale: CustomLocale }) => {
   const dictionary = await getDictionary(locale);

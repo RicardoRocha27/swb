@@ -1,8 +1,8 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
-import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
 
 import {
   DropdownMenu,

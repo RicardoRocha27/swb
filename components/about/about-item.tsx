@@ -1,9 +1,7 @@
-"use client";
-
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 export type TAboutItem = {
   image: string;

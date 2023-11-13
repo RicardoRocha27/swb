@@ -5,6 +5,9 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Proza_Libre } from "next/font/google";
 import { motion } from "framer-motion";
+import { toast } from "react-hot-toast";
+import Image from "next/image";
+import emailjs from "@emailjs/browser";
 
 import {
   Form,
@@ -17,10 +20,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import emailjs from "@emailjs/browser";
-import { toast } from "react-hot-toast";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 const prozaLibre = Proza_Libre({ subsets: ["latin"], weight: "700" });
 

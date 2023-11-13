@@ -1,13 +1,9 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
 import AboutItem from "./about-item";
 
 export type TAboutItem = {
