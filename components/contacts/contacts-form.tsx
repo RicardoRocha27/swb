@@ -6,6 +6,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Proza_Libre } from "next/font/google";
 import { motion } from "framer-motion";
 import { toast } from "react-hot-toast";
+import { LoaderIcon } from "lucide-react";
+import { useState } from "react";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 
@@ -79,9 +81,11 @@ const ContactsForm = ({
     },
   });
 
-  const isLoading = form.formState.isSubmitting;
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
+    setIsLoading(true);
+
     const formTemplate = {
       name: values.name,
       email: values.email,
@@ -102,9 +106,10 @@ const ContactsForm = ({
           form.reset();
         },
         () => {
-          toast.success(toasts.error);
+          toast.error(toasts.error);
         }
-      );
+      )
+      .finally(() => setIsLoading(false));
   };
 
   return (
@@ -127,7 +132,10 @@ const ContactsForm = ({
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>{inputs.name.label}</FormLabel>
+                    <FormLabel>
+                      {inputs.name.label}{" "}
+                      <span className="text-red-400">*</span>
+                    </FormLabel>
                     <FormControl>
                       <Input
                         disabled={isLoading}
@@ -144,7 +152,10 @@ const ContactsForm = ({
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>{inputs.email.label}</FormLabel>
+                    <FormLabel>
+                      {inputs.email.label}{" "}
+                      <span className="text-red-400">*</span>
+                    </FormLabel>
                     <FormControl>
                       <Input
                         disabled={isLoading}
@@ -162,7 +173,10 @@ const ContactsForm = ({
               name="subject"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{inputs.subject.label}</FormLabel>
+                  <FormLabel>
+                    {inputs.subject.label}{" "}
+                    <span className="text-red-400">*</span>
+                  </FormLabel>
                   <FormControl>
                     <Input
                       disabled={isLoading}
@@ -179,7 +193,10 @@ const ContactsForm = ({
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>{inputs.message.label}</FormLabel>
+                  <FormLabel>
+                    {inputs.message.label}{" "}
+                    <span className="text-red-400">*</span>
+                  </FormLabel>
                   <FormControl>
                     <Textarea
                       className=" resize-none"
@@ -192,25 +209,43 @@ const ContactsForm = ({
                 </FormItem>
               )}
             />
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-fit"
-            >
+
+            {isLoading ? (
               <Button
                 variant={"secondary"}
-                className="space-x-2 mt-8"
-                disabled={isLoading}
+                className="space-x-2 w-[155.33px] "
+                disabled={true}
               >
-                <p>{buttonLabel}</p>
-                <Image
-                  src={"/assets/icons/send-icon.svg"}
-                  alt="send"
-                  width={24}
-                  height={24}
-                />
+                <motion.div
+                  animate={{
+                    rotate: [0, 360],
+                    transition: {
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear",
+                    },
+                  }}
+                >
+                  <LoaderIcon size={24} />
+                </motion.div>
               </Button>
-            </motion.div>
+            ) : (
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-fit"
+              >
+                <Button variant={"secondary"} className="space-x-2">
+                  <p>{buttonLabel}</p>
+                  <Image
+                    src={"/assets/icons/send-icon.svg"}
+                    alt="send"
+                    width={24}
+                    height={24}
+                  />
+                </Button>
+              </motion.div>
+            )}
           </form>
         </Form>
       </div>
