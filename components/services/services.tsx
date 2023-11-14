@@ -1,8 +1,8 @@
 import { CustomLocale } from "@/types";
-import Container from "../container";
-import Heading from "../heading";
-import ServiceItem from "./service-item";
 import { getDictionary } from "@/lib/get-dictionary";
+import Container from "@/components/container";
+import Heading from "@/components/heading";
+
 import ServicesList from "./services-list";
 
 const Services = async ({ locale }: { locale: CustomLocale }) => {

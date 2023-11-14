@@ -1,5 +1,6 @@
-import { cn } from "@/lib/utils";
 import { Proza_Libre } from "next/font/google";
+
+import { cn } from "@/lib/utils";
 
 type THeading = {
   title: string;

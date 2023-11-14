@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
 import ProjectCard, { TProjectCard } from "./project-card";
 
 const ProjectCardAnimated = ({

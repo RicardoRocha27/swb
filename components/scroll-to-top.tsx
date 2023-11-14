@@ -2,6 +2,7 @@
 
 import { ArrowUp } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,12 +32,14 @@ const ScrollToTop = () => {
 
   return (
     isVisible && (
-      <div
+      <motion.div
         className="flex w-fit z-20 justify-center items-center rounded-full bg-accent hover:bg-accent/70 fixed cursor-pointer bottom-5 left-5 duration-300"
         onClick={scrollToTop}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
       >
         <ArrowUp size={20} className="text-background m-2" />
-      </div>
+      </motion.div>
     )
   );
 };

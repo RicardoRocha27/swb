@@ -1,9 +1,10 @@
 import { CustomLocale } from "@/types";
-import Container from "../container";
-import Heading from "../heading";
-import ProjectCard from "./project-card";
 import { getDictionary } from "@/lib/get-dictionary";
+import Container from "@/components/container";
+import Heading from "@/components/heading";
+
 import ProjectCardAnimated from "./project-card-animated";
+import ProjectCard from "./project-card";
 
 const Projects = async ({ locale }: { locale: CustomLocale }) => {
   const dictionary = await getDictionary(locale);

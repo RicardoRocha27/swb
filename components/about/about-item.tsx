@@ -27,13 +27,13 @@ const AboutItem = ({
         reversed && "mb-0"
       )}
     >
-      <div className={cn("mx-auto sm:mx-0 order-1", reversed && "sm:order-2")}>
+      <div className={cn("mx-auto sm:mx-0 order-1 ", reversed && "sm:order-2")}>
         <Image
           className={cn("rounded-sm", reversed && "sm:ml-auto")}
           src={image}
           alt={title}
-          width={300}
           height={300}
+          width={300}
         />
       </div>
       <div

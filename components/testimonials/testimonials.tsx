@@ -1,9 +1,11 @@
 import React from "react";
-import Heading from "../heading";
-import Container from "../container";
-import TestimonialsSlider from "./testimonials-slider";
+
 import { getDictionary } from "@/lib/get-dictionary";
 import { CustomLocale } from "@/types";
+import Heading from "@/components/heading";
+import Container from "@/components/container";
+
+import TestimonialsSlider from "./testimonials-slider";
 
 const Testimonials = async ({ locale }: { locale: CustomLocale }) => {
   const dictionary = await getDictionary(locale);
