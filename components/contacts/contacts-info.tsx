@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type TContactsInfo = {
   heading: string;
@@ -18,7 +19,11 @@ const ContactsInfo = ({ heading, city }: TContactsInfo) => {
               width={32}
               height={32}
             />
-            <p>+351 964514203 / +351 910101126</p>
+            <div className="flex gap-x-2">
+              <Link href="tel:964514203">+351 964514203 </Link>
+              <p>/</p>
+              <Link href="tel:910101126"> +351 910101126</Link>
+            </div>
           </div>
           <div className="flex items-center space-x-12">
             <Image
@@ -27,7 +32,9 @@ const ContactsInfo = ({ heading, city }: TContactsInfo) => {
               width={32}
               height={32}
             />
-            <p>connect.swb@gmail.com</p>
+            <Link href="mailto:connect.swb@gmail.com">
+              connect.swb@gmail.com
+            </Link>
           </div>
           <div className="flex items-center space-x-12">
             <Image
@@ -36,7 +43,12 @@ const ContactsInfo = ({ heading, city }: TContactsInfo) => {
               width={32}
               height={32}
             />
-            <p>{city}</p>
+            <Link
+              target="_blank"
+              href="https://www.google.com/maps/place/Lisboa/@38.742249,-9.1876256,12.9z/data=!4m6!3m5!1s0xd19331a61e4f33b:0x400ebbde49036d0!8m2!3d38.7222524!4d-9.1393366!16zL20vMDRsbGI?hl=pt-PT&entry=ttu"
+            >
+              {city}
+            </Link>
           </div>
         </div>
         <Image

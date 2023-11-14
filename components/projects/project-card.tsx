@@ -29,7 +29,15 @@ const ProjectCard = ({
   function transformServiceName(serviceName: string) {
     return serviceName
       .split("_")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .map(
+        (word, index, arr) =>
+          (arr.length < 3
+            ? word.charAt(0).toUpperCase()
+            : index % 2 === 0
+            ? word.charAt(0).toUpperCase()
+            : word.charAt(0)) + word.slice(1)
+      )
+
       .join(" ");
   }
 

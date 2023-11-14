@@ -54,7 +54,7 @@
       "tiago": {
         "image": "/assets/photos/tiago.png",
         "name": "Tiago Pereira",
-        "description": "Enquanto jovem empreendedor estou constantemente em busca de novas oportunidades de aprendizagem para impulsionar o meu crescimento pessoal e profissional. Motivado por criar um impacto significativo no mundo dos negócios e da tecnologia.",
+        "description": "Enquanto jovem empreendedor estou constantemente à procura de novas oportunidades de aprendizagem para impulsionar o meu crescimento pessoal e profissional. Motivado por criar um impacto significativo no mundo dos negócios e da tecnologia.",
         "href": "https://tiagopereira-portfolio.vercel.app/",
         "reversed": false,
         "buttonLabel": "Visitar Website"
@@ -83,8 +83,8 @@
         "subtitle": "Centro de Explicações em Portugal",
         "text": "Este website disponibiliza informações sobre serviços de apoio ao estudo para vários níveis escolares, disciplinas, exames do ensino secundário em Portugal, e até mesmo cursos específicos da universidade. Os utilizadores podem explorar os detalhes deste centro de estudo, disciplinas disponíveis e até simular o custo mensal do plano desejado.",
         "services": {
-          "web_design": true,
-          "web_development": true,
+          "design_de_websites": true,
+          "desenvolvimento_de_websites": true,
           "copywriting": false
         }
       },
@@ -96,8 +96,8 @@
         "subtitle": "Empresa de Aluguer de Casas na Serra da Estrela",
         "text": "Este website disponibiliza informações detalhadas sobre as casas disponíveis para aluguer, a encantadora vila de Manteigas onde as casas se encontram, bem como informações sobre a deslumbrante Serra da Estrela. Os utilizadores podem explorar detalhes sobre cada casa, incluindo uma galeria que mostra todos as divisões das propriedades.",
         "services": {
-          "web_design": true,
-          "web_development": true,
+          "design_de_websites": true,
+          "desenvolvimento_de_websites": true,
           "copywriting": true
         }
       },
@@ -109,8 +109,8 @@
         "subtitle": "Plataforma Social para Entusiastas de Humor",
         "text": "Mergulha num mundo de humor, interage com publicações engraçadas, e explora uma seleção de conteúdo cómico. Demonstra o teu apreço com gostos, participa em conversas através de comentários, e espreita os perfis dos outros utilizadores para ver as suas interações. Mantém um olho no quadro de liderança para descobrir os utilizadores com mais gostos acumulados.",
         "services": {
-          "web_design": true,
-          "web_development": true,
+          "design_de_websites": true,
+          "desenvolvimento_de_websites": true,
           "copywriting": true
         }
       }
