@@ -23,17 +23,18 @@ const AboutItem = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-24 md:h-[354px]",
+        "grid grid-cols-1 sm:grid-cols-2 items-center gap-4 mb-24 md:h-[354px] overflow-hidden",
         reversed && "mb-0"
       )}
     >
-      <div className={cn("mx-auto sm:mx-0 order-1 ", reversed && "sm:order-2")}>
+      <div className={cn("mx-auto sm:mx-0 order-1", reversed && "sm:order-2")}>
         <Image
           className={cn("rounded-sm", reversed && "sm:ml-auto")}
           src={image}
           alt={title}
-          height={300}
-          width={300}
+          height={354}
+          width={354}
+          loading="eager"
         />
       </div>
       <div
