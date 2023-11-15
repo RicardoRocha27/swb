@@ -26,7 +26,7 @@ const DesktopNavbar = ({ routes }: TDesktopNavbar) => {
               width={130}
             />
           </Link>
-          <div className="space-x-8 flex items-center ">
+          <div className="space-x-4 lg:space-x-8 flex items-center ">
             {Object.values(routes).map((route, index) => (
               <MenuItem key={index} item={route} />
             ))}
