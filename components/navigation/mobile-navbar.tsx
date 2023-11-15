@@ -9,6 +9,7 @@ import {
   SheetContent,
   SheetFooter,
   SheetHeader,
+  SheetPrimitive,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
@@ -42,9 +43,11 @@ const MobileNavbar = ({ routes }: TMobileNavbar) => {
                 <Image src={Logo} width={130} alt="logo" />
                 <Separator className="bg-secondary min-w-[100px] h-[1px] rounded-full my-2" />
               </SheetHeader>
-              <nav className="flex flex-col space-y-3 mt-8">
+              <nav className="mt-8 space-y-3">
                 {Object.values(routes).map((route, index) => (
-                  <MenuItem key={index} item={route} />
+                  <SheetPrimitive.Close key={index} className="flex flex-col">
+                    <MenuItem item={route} />
+                  </SheetPrimitive.Close>
                 ))}
               </nav>
               <SheetFooter>
