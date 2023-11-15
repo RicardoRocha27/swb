@@ -18,6 +18,7 @@ const TestimonialItem = ({ image, name, type, comment }: CarouselItemProps) => {
                 src={image}
                 loading="eager"
                 alt="main image"
+                sizes="auto"
                 fill
                 className="object-cover object-center rounded-full shadow-md"
               />
