@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "Developers",
     "Agencia de Websites",
     "Digital Agency",
+    "Super Web Builders",
   ],
 };
 
