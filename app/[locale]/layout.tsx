@@ -13,6 +13,16 @@ export const metadata: Metadata = {
   title: "Super Web Builders - SWB Official",
   description:
     "Crafting dynamic, user-centric online experiences that go beyond the ordinary. We shape destinies, not just websites.",
+  keywords: [
+    "Web Development",
+    "Websites",
+    "Website Agency",
+    "Web Apps",
+    "Design",
+    "Developers",
+    "Agencia de Websites",
+    "Digital Agency",
+  ],
 };
 
 export default function RootLayout({
